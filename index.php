@@ -29,6 +29,7 @@
         <?php
 
             $inicio = './src/pages/home.php';
+            $paginaNaoEncontrada = '';
 
             $paginasDisponiveis = [
                 $inicio
@@ -39,7 +40,7 @@
             if (in_array($pagina, $paginasDisponiveis) && file_exists($pagina)) {
                 include $pagina;
             } else {
-                include $inicio;
+                include $paginaNaoEncontrada;
             }
         ?>
     </main>
