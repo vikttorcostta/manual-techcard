@@ -34,21 +34,22 @@
     <main>
         <?php
 
-            $inicio = './src/pages/home.php';
-            $novaPagina = './src/pages/novaPagina.php';
+        $home = './src/pages/home.php';
+        $novaPagina = './src/pages/novaPagina.php';
 
-            $paginasDisponiveis = [
-                $inicio,
-                $novaPagina
-            ];
+        $paginasDisponiveis = [
+            $home,
+            $novaPagina
+        ];
 
-            $pagina = isset($_GET['pagina']) ? basename($_GET['pagina']) : 'home.php';
+        $pagina = isset($_GET['pagina']) ? basename($_GET['pagina']) : 'home.php';
+        $caminhoPagina = "./src/pages/$pagina";
 
-            if (in_array($pagina, $paginasDisponiveis) && file_exists($pagina)) {
-                include $pagina;
-            } else {
-                include $inicio;
-            }
+        if (in_array($caminhoPagina, $paginasDisponiveis, true) && file_exists($caminhoPagina)) {
+            include $caminhoPagina;
+        } else {
+            include $home;
+        }
         ?>
     </main>
 </body>
