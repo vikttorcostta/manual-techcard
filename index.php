@@ -22,6 +22,12 @@
                         <span>Início</span>
                     </a>
                 </li>
+                <li>
+                    <a href="?pagina=novaPagina.php" class="flex items-center space-x-2 p-2 rounded hover:bg-slate-100">
+                        <span class="iconify text-2xl" data-icon="solar:document-text-line-duotone"></span>
+                        <span>Nova pagina</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </aside>
@@ -29,9 +35,11 @@
         <?php
 
             $inicio = './src/pages/home.php';
+            $novaPagina = './src/pages/novaPagina.php';
 
             $paginasDisponiveis = [
-                $inicio
+                $inicio,
+                $novaPagina
             ];
 
             $pagina = isset($_GET['pagina']) ? basename($_GET['pagina']) : 'home.php';
