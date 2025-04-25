@@ -6,6 +6,20 @@ function visualizarMenuLateral(){
     });
 }
 
+function toggleSubmenu()
+{
+    const toggleBtn = document.getElementById('toggle-submenu');
+    const submenu = document.getElementById('submenu');
+
+    if(toggleBtn && submenu)
+    {
+        toggleBtn.addEventListener('click', function(){
+            submenu.classList.toggle('hidden');
+        })
+    }
+}
+
+toggleSubmenu();
 visualizarMenuLateral();
 
 

@@ -23,10 +23,18 @@
                     </a>
                 </li>
                 <li>
-                    <a href="?pagina=novaPagina.php" class="flex items-center space-x-2 p-2 rounded hover:bg-slate-100">
-                        <span class="iconify text-2xl" data-icon="solar:document-text-line-duotone"></span>
-                        <span>Nova pagina</span>
-                    </a>
+                    <button id="toggle-submenu" class="w-full flex items-center space-x-2 p-2 rounded hover:bg-slate-100">
+                        <span class="iconify text-2xl" data-icon="solar:download-line-duotone"></span>
+                        <span>Guia de Instalação</span>
+                    </button>
+                    <ul id="submenu" class="ml-6 mt-2 space-y-2 hidden">
+                        <li>
+                            <a href="?pagina=configuracoes.php" class="block p-2 rounded hover:bg-slate-100">Configurações Mínimas</a>                            
+                        </li>
+                        <li>
+                            <a href="?pagina=instalacao.php" class="block p-2 rounded hover:bg-slate-100">Instalação e Acesso</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>
@@ -36,10 +44,14 @@
 
         $home = './src/pages/home.php';
         $novaPagina = './src/pages/novaPagina.php';
+        $configuracoes = './src/pages/configuracoes.php';
+        $instalacao = './src/pages/instalacao.php';
 
         $paginasDisponiveis = [
             $home,
-            $novaPagina
+            $novaPagina,
+            $configuracoes,
+            $instalacao
         ];
 
         $pagina = isset($_GET['pagina']) ? basename($_GET['pagina']) : 'home.php';
