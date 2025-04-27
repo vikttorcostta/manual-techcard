@@ -8,11 +8,20 @@
         <div>
             <p>Para garantir o funcionamento adequado da aplicação, certifique-se de que o ambiente onde ela será executada atenda aos seguintes requisitos mínimos:<br><br>
             
-            <h2 class="text-2xl font-semibold">🖥️Sistema Operacional</h2><br>
+            
+            
+            <h2 class="text-2xl font-semibold flex items-center gab-3">
+                <span class="iconify text-2xl" data-icon="solar:double-alt-arrow-right-line-duotone"></span>
+                Sistema Operacional
+            </h2>
+            <br>
                 
                 Linux 22.4<br><br>
 
-            <h2 class="text-2xl font-semibold">🐘PHP</h2><br>
+            <h2 class="text-2xl font-semibold flex items-center gab-3">
+                <span class="iconify text-2xl" data-icon="solar:double-alt-arrow-right-line-duotone"></span>
+                PHP
+            </h2><br>
 
             Versão: 8.3<br><br>
 
@@ -37,17 +46,26 @@
                 <li>max_execution_time de 60 segundos ou mais</li>
             </ul><br>
 
-            <h2 class="text-2xl font-semibold">📦Framework</h2><br>
+            <h2 class="text-2xl font-semibold flex items-center gab-3">
+                <span class="iconify text-2xl" data-icon="solar:double-alt-arrow-right-line-duotone"></span>
+                Framework
+            </h2><br>
 
             Laravel 12<br><br>
 
-            <h2 class="text-2xl font-semibold">🗄️Banco de Dados</h2><br>
+            <h2 class="text-2xl font-semibold flex items-center gab-3">
+                <span class="iconify text-2xl" data-icon="solar:double-alt-arrow-right-line-duotone"></span>
+                Banco de Dados
+            </h2><br>
 
             <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
                 <li>MySQL 8.0 ou superior (MariaDB 10.4+ também é compatível)</li>
             </ul><br>
 
-            <h2 class="text-2xl font-semibold">🔧Servidor Web</h2><br>
+            <h2 class="text-2xl font-semibold flex items-center gab-3">
+                <span class="iconify text-2xl" data-icon="solar:double-alt-arrow-right-line-duotone"></span>
+                Servidor Web
+            </h2><br>
 
             <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
                 <li>Apache 2.4 ou superior (Requer ativação do módulo mod_rewrite)</li>
