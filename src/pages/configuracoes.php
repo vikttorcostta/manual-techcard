@@ -11,7 +11,7 @@
             
             
             <h2 class="text-2xl font-semibold flex items-center gab-3">
-                <span class="iconify text-2xl" data-icon="solar:double-alt-arrow-right-line-duotone"></span>
+                <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 Sistema Operacional
             </h2>
             <br>
@@ -19,7 +19,7 @@
                 Linux 22.4<br><br>
 
             <h2 class="text-2xl font-semibold flex items-center gab-3">
-                <span class="iconify text-2xl" data-icon="solar:double-alt-arrow-right-line-duotone"></span>
+                <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 PHP
             </h2><br>
 
@@ -47,14 +47,14 @@
             </ul><br>
 
             <h2 class="text-2xl font-semibold flex items-center gab-3">
-                <span class="iconify text-2xl" data-icon="solar:double-alt-arrow-right-line-duotone"></span>
+                <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 Framework
             </h2><br>
 
             Laravel 12<br><br>
 
             <h2 class="text-2xl font-semibold flex items-center gab-3">
-                <span class="iconify text-2xl" data-icon="solar:double-alt-arrow-right-line-duotone"></span>
+                <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 Banco de Dados
             </h2><br>
 
@@ -63,7 +63,7 @@
             </ul><br>
 
             <h2 class="text-2xl font-semibold flex items-center gab-3">
-                <span class="iconify text-2xl" data-icon="solar:double-alt-arrow-right-line-duotone"></span>
+                <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 Servidor Web
             </h2><br>
 
