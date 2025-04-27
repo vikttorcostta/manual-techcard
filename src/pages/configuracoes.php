@@ -14,6 +14,8 @@
 
             <h2 class="text-2xl font-semibold">🐘PHP</h2><br>
 
+            Versão: 8.3<br><br>
+
             Extensões Obrigatórias<br><br>
 
             <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
