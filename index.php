@@ -24,7 +24,7 @@
                 </li>
                 <li>
                     <button id="toggle-submenu" class="w-full flex items-center space-x-2 p-2 rounded hover:bg-slate-100">
-                        <span class="iconify text-2xl" data-icon="solar:download-line-duotone"></span>
+                        <span class="iconify text-2xl" data-icon="solar:cloud-line-duotone"></span>
                         <span>Guia de Instalação</span>
                     </button>
                     <ul id="submenu" class="ml-6 mt-2 space-y-2 hidden">

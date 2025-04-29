@@ -8,11 +8,22 @@
         <div>
             <p>Para garantir o funcionamento adequado da aplicação, certifique-se de que o ambiente onde ela será executada atenda aos seguintes requisitos mínimos:<br><br>
             
-            <h2 class="text-2xl font-semibold">🖥️Sistema Operacional</h2><br>
+            
+            
+            <h2 class="text-2xl font-semibold flex items-center gab-3">
+                <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
+                Sistema Operacional
+            </h2>
+            <br>
                 
-                Windows 10 ou superior (versões de 64 bits recomendadas)<br><br>
+                Linux 22.4<br><br>
 
-            <h2 class="text-2xl font-semibold">🐘PHP</h2><br>
+            <h2 class="text-2xl font-semibold flex items-center gab-3">
+                <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
+                PHP
+            </h2><br>
+
+            Versão: 8.3<br><br>
 
             Extensões Obrigatórias<br><br>
 
@@ -35,44 +46,30 @@
                 <li>max_execution_time de 60 segundos ou mais</li>
             </ul><br>
 
-            <h2 class="text-2xl font-semibold">📦Framework</h2><br>
+            <h2 class="text-2xl font-semibold flex items-center gab-3">
+                <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
+                Framework
+            </h2><br>
 
             Laravel 12<br><br>
 
-            <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
-                <li>Requer Composer 2.x ou superior</li>
-                <li>Recomendado utilizar o Laravel Mix ou Vite para gestão de assets (JS/CSS)</li>
-            </ul><br>
-
-            <h2 class="text-2xl font-semibold">🗄️Banco de Dados</h2><br>
+            <h2 class="text-2xl font-semibold flex items-center gab-3">
+                <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
+                Banco de Dados
+            </h2><br>
 
             <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
                 <li>MySQL 8.0 ou superior (MariaDB 10.4+ também é compatível)</li>
-                <li>O usuário do banco de dados deve ter permissões de CREATE,SELECT,INSERT,UPDATE,DELETE,DROP,ALTER</li>
             </ul><br>
 
-            <h2 class="text-2xl font-semibold">🔧Servidor Web</h2><br>
+            <h2 class="text-2xl font-semibold flex items-center gab-3">
+                <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
+                Servidor Web
+            </h2><br>
 
             <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
                 <li>Apache 2.4 ou superior (Requer ativação do módulo mod_rewrite)</li>
                 <li>Alternativamente: Nginx 1.18 ou superior (configuração peersonalizada)</li>
-            </ul><br>
-
-            <h2 class="text-2xl font-semibold">📁Permissões de Pasta (em ambientes de desenvolvimento ou produção)</h2><br>
-
-            As seguintes pastas devem ter permissões de leitura e escrita:<br><br>
-
-            <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
-                <li>/storage</li>
-                <li>/bootstrap/cache</li>
-            </ul><br>
-
-            <h2 class="text-2xl font-semibold">🧪Requisitos Adicionais</h2><br>
-
-            <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
-                <li>Composer(para instalação e gerenciamento de dependências PHP)</li>
-                <li>Navegador moderno atualizado (Chrome,Firefox,Edge)</li>
-                <li>Editor de código recomendado: VSCode ou PHPStorm (opcional, mas útil para desenvolvedores)</li>
             </ul><br>
             </p>
         </div>
