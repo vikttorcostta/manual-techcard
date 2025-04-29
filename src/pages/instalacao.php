@@ -27,23 +27,14 @@
                 Versão do PHP compatível<br><br>
 
                 <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
-                <li>Verifique a versão do PHP exigida pelo sistema</li>
+                <li>Verifique a versão do PHP exigida pelo sistema</li><br>
+                <img src="imagens/Configuração PHP.jpeg">
                 <li>Garanta que a hospedagem ou servidor esteja com essa versão ativa</li>
                 </ul><br>
 
                 Extensões PHP necessárias:<br><br>
 
-                <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
-                <li>BCMath</li>
-                <li>Ctype</li>
-                <li>Fileinfo</li>
-                <li>JSON</li>
-                <li>Mbstring</li>
-                <li>OpenSSL</li>
-                <li>PDO</li>
-                <li>Tokenizer</li>
-                <li>XML</li>
-                </ul><br>
+                <img src="imagens/print_extensoes.jpeg"><br>
 
                 <h2 class="text-2xl font-semibold flex items-center gab-3">
                 <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
@@ -53,9 +44,11 @@
                 Adicionar a Chave SSH no GitHub<br><br>
 
                 <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
-                <li>Gere uma chave SSH localmente (caso ainda não possua)</li>
+                <li>Gere uma chave SSH localmente (caso ainda não possua)</li><br>
+                <img src="imagens/Print_git_privado.jpeg">
                 <li>Acesse seu repositório no Github</li>
-                <li>Vá em Configurações > SSH and GPG keys > New SSH key</li>
+                <li>Vá em Configurações > SSH and GPG keys > New SSH key</li><br>
+                <img src="imagens/salvando_e_colando_chave.jpeg">
                 <li>Cole a chave pública gerada</li>
                 <li>Salve a nova chave SSH</li>
                 </ul><br><br>
@@ -63,10 +56,12 @@
                 Confirmar Implantação Automátiva<br><br>
 
                 <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
-                <li>Acesse as configurações de repositório no GitHub</li>
+                <li>Acesse as configurações de repositório no GitHub</li><br>
+                <img src="imagens/configurando_chaves.png">
                 <li>Vá até seção Webhooks</li>
                 <li>Clique em Add webhook</li>
-                <li>Copie e cole a URL do Webhook fornecida pelo seu servidor ou serviços de integração contínua</li>
+                <li>Copie e cole a URL do Webhook fornecida pelo seu servidor ou serviços de integração contínua</li><br>
+                <img src="imagens/colando_chave.png">
                 <li>Selecione o evento desejado para o acionamento da implantação (geralmente "push")</li>
                 <li>Salve as alterações</li>
                 </ul><br><br>
