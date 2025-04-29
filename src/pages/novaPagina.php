@@ -1,11 +1,3 @@
-
-
-<div class="bg-white p-10 shadow-md flex flex-col items-center w-full">
-    <button id="menu-toggle" class="md:hidden p-2 fixed top-2 right-3 text-slate-700">
-        <span class="iconify text-4xl" data-icon="solar:hamburger-menu-line-duotone"></span>
-    </button>
-</div>
-
 <section class="p-4 flex-1 ml-0 sm:ml-64 sm:p-8">
     <h2 class="text-2xl font-semibold">Nova pagina</h2>
 
