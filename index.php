@@ -42,7 +42,7 @@
             </ul>
         </nav>
     </aside>
-    <main>
+    <main class="w-full">
         <?php
 
         $home = './src/pages/home.php';
