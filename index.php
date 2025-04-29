@@ -53,29 +53,28 @@
                 <span class="iconify text-4xl" data-icon="solar:hamburger-menu-line-duotone"></span>
             </button>
         </div>
-        <?php
 
-        $home = './src/pages/home.php';
-        $novaPagina = './src/pages/novaPagina.php';
-        $configuracoes = './src/pages/configuracoes.php';
-        $instalacao = './src/pages/instalacao.php';
+        <div class="m-2">
+            <?php
 
-        $paginasDisponiveis = [
-            $home,
-            $novaPagina,
-            $configuracoes,
-            $instalacao
-        ];
+                require_once "helpers.php";
+                
+                $home = './src/pages/home.php';
+                $novaPagina = './src/pages/novaPagina.php';
+                $configuracoes = './src/pages/configuracoes.php';
+                $instalacao = './src/pages/instalacao.php';
 
-        $pagina = isset($_GET['pagina']) ? basename($_GET['pagina']) : 'home.php';
-        $caminhoPagina = "./src/pages/$pagina";
+                $paginasDisponiveis = [
+                    $home,
+                    $novaPagina,
+                    $configuracoes,
+                    $instalacao
+                ];
 
-        if (in_array($caminhoPagina, $paginasDisponiveis, true) && file_exists($caminhoPagina)) {
-            include $caminhoPagina;
-        } else {
-            include $home;
-        }
-        ?>
+                roteamentoPaginas($paginasDisponiveis, $home);
+            ?>
+
+        </div>
     </main>
 </body>
 
