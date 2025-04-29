@@ -1,19 +1,18 @@
 <section class="p-4 flex-1 ml-0 sm:ml-64 sm:p-8">
-    <h2 class="text-2xl font-semibold">Configurações Mínimas</h2>
+    <section class="mt-16 bg-white p-6 rounded shadow flex flex-col items-center gap-2 sm:flex-row">
+        <div class="flex flex-col gap-4">
+            <h2 class="text-3xl font-semibold">Configurações Mínimas</h2>
+            <p>Para garantir o funcionamento adequado da aplicação, certifique-se de que o ambiente onde ela será
+                executada atenda aos seguintes requisitos mínimos:<br><br>
 
-    <section class="mt-8 bg-white p-6 rounded shadow flex flex-col items-center gap-2 sm:flex-row">
-        <div>
-            <p>Para garantir o funcionamento adequado da aplicação, certifique-se de que o ambiente onde ela será executada atenda aos seguintes requisitos mínimos:<br><br>
-            
-            
-            
+
             <h2 class="text-2xl font-semibold flex items-center gab-3">
                 <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 Sistema Operacional
             </h2>
             <br>
-                
-                Linux 22.4<br><br>
+
+            Linux 22.4<br><br>
 
             <h2 class="text-2xl font-semibold flex items-center gab-3">
                 <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
@@ -35,7 +34,7 @@
                 <li>Tokenizer</li>
                 <li>XML</li>
             </ul><br>
-            
+
             Configuração Recomendada:<br><br>
 
             <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
