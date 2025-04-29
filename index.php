@@ -16,6 +16,9 @@
     <aside id="sidebar" class="w-64 bg-white text-white p-5 space-y-4 fixed h-full hidden md:block overflow-y-scroll shadow-md">
         <nav class="text-slate-500">
             <ul class="space-y-4">
+                <div>
+                    <img src="" alt="">
+                </div>
                 <li>
                     <a href="?pagina=home.php" class="flex items-center space-x-2 p-2 rounded hover:bg-slate-100">
                         <span class="iconify text-2xl" data-icon="solar:home-line-duotone"></span>
