@@ -29,14 +29,41 @@
 
             <ul style="list-style-type: '✔️'; padding-left: 1.5em;">
                 <li>BCMath</li>
+                <li>dom</li>
                 <li>Ctype</li>
                 <li>Fileinfo</li>
                 <li>JSON</li>
                 <li>Mbstring</li>
+                <li>Msgpack</li>
                 <li>OpenSSL</li>
                 <li>PDO</li>
                 <li>Tokenizer</li>
                 <li>XML</li>
+                <li>imagick</li>
+                <li>nd_mysqli</li>
+                <li>sockets</li>
+                <li>sysvsem</li>
+                <li>sysvshm</li>
+                <li>tidy</li>
+                <li>xmlwriter</li>
+                <li>xmlreader</li>
+                <li>nd_mysqli</li>
+                <li>zip</li>
+                <li>imap</li>
+                <li>mailparse</li>
+                <li>nd_pdo_mysql</li>
+                <li>timezonedb</li>
+                <li>xsl</li>
+                <li>opcache</li>
+                <li>pdo_sqlite</li>
+                <li>gd</li>
+                <li>gmp</li>
+                <li>igbinary</li>
+                <li>intl</li>
+                <li>mysqlnd</li>
+                <li>posix</li>
+                <li>soap</li>
+                <li>xmlrpc</li>
             </ul><br>
             
             Configuração Recomendada:<br><br>
