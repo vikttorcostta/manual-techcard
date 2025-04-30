@@ -16,7 +16,7 @@
                 executada atenda aos seguintes requisitos mínimos:<br><br>
 
 
-            <h2 class="text-2xl font-semibold flex items-center gab-3">
+            <h2 class="text-2xl font-semibold flex flex-row items-center gap-2">
                 <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 Sistema Operacional
             </h2>
@@ -24,7 +24,7 @@
 
             Linux 22.4<br><br>
 
-            <h2 class="text-2xl font-semibold flex items-center gab-3">
+            <h2 class="text-2xl font-semibold flex items-center gap-2">
                 <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 PHP
             </h2><br>
@@ -52,14 +52,14 @@
                 <li>max_execution_time de 60 segundos ou mais</li>
             </ul><br>
 
-            <h2 class="text-2xl font-semibold flex items-center gab-3">
+            <h2 class="text-2xl font-semibold flex items-center gap-2">
                 <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 Framework
             </h2><br>
 
             Laravel 12<br><br>
 
-            <h2 class="text-2xl font-semibold flex items-center gab-3">
+            <h2 class="text-2xl font-semibold flex items-center gap-2">
                 <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 Banco de Dados
             </h2><br>
@@ -68,7 +68,7 @@
                 <li>MySQL 8.0 ou superior (MariaDB 10.4+ também é compatível)</li>
             </ul><br>
 
-            <h2 class="text-2xl font-semibold flex items-center gab-3">
+            <h2 class="text-2xl font-semibold flex items-center gap-2">
                 <span class="iconify text-2xl" data-icon="solar:round-alt-arrow-right-line-duotone"></span>
                 Servidor Web
             </h2><br>
