@@ -1,7 +1,17 @@
+<?php
+    require_once 'helpers.php';
+    $pagina = $_GET['pagina'];
+?>
+
+
 <section class="p-4 flex-1 ml-0 sm:ml-64 sm:p-8">
     <section class="mt-16 bg-white p-6 rounded shadow flex flex-col items-center gap-2 sm:flex-row">
         <div class="flex flex-col gap-4">
-            <h2 class="text-3xl font-semibold">Configurações Mínimas</h2>
+            <h2 class="text-3xl font-semibold">
+                <?php
+                    echo tituloPaginaDinamico($pagina);
+                ?>
+            </h2>
             <p>Para garantir o funcionamento adequado da aplicação, certifique-se de que o ambiente onde ela será
                 executada atenda aos seguintes requisitos mínimos:<br><br>
 
