@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Roteamento das páginas acessadas
+ * @param array $paginas
+ * @param string $home
+ * @return void
+ */
 function roteamentoPaginas(array $paginas, string $home): void
 {
     $pagina = isset($_GET['pagina']) ? basename($_GET['pagina']) : 'home.php';
@@ -12,10 +18,15 @@ function roteamentoPaginas(array $paginas, string $home): void
     }
 }
 
-
-function tituloPaginaDinamico($pagina): string
+/**
+ * Retorna o título da página dinamicamente
+ * @param string $pagina
+ * @return string
+ */
+function tituloPaginaDinamico(string $pagina): string
 {
     return match ($pagina) {
+        'home.php' => 'vCardHub',
         'configuracoes.php' => 'Configurações Mínimas',
         'instalacao.php' => 'Instalação e Acesso',
         'apresentacao.php' => 'Apresentação do Sistema',
@@ -23,6 +34,7 @@ function tituloPaginaDinamico($pagina): string
         'cadastro_login.php' => 'Cadastro e Login',
         'dashboard_navegacao.php' => 'Dashboard e Navegação',
         'modulos.php' => 'Módulos',
+        'novaPagina.php' => 'Nova Página',
         default => 'Página não encontrada'
     };
 }
