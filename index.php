@@ -57,24 +57,25 @@
         <div class="m-2">
             <?php
 
-                require_once "helpers.php";
-                
-                $home = './src/pages/home.php';
-                $novaPagina = './src/pages/novaPagina.php';
-                $configuracoes = './src/pages/configuracoes.php';
-                $instalacao = './src/pages/instalacao.php';
+            require_once "helpers.php";
 
-                $paginasDisponiveis = [
-                    $home,
-                    $novaPagina,
-                    $configuracoes,
-                    $instalacao
-                ];
+            $home = './src/pages/home.php';
+            $novaPagina = './src/pages/novaPagina.php';
+            $configuracoes = './src/pages/configuracoes.php';
+            $instalacao = './src/pages/instalacao.php';
 
-                roteamentoPaginas($paginasDisponiveis, $home);
+            $paginasDisponiveis = [
+                $home,
+                $novaPagina,
+                $configuracoes,
+                $instalacao
+            ];
+
+            roteamentoPaginas($paginasDisponiveis, $home);
             ?>
 
         </div>
+        <script src="src/js/main.js"></script>
     </main>
 </body>
 

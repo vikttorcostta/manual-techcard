@@ -8,9 +8,7 @@
     <section class="mt-16 bg-white p-6 rounded shadow flex flex-col items-center gap-2 sm:flex-row">
         <div class="flex flex-col gap-4">
             <h2 class="text-3xl font-semibold">
-                <?php
-                    echo tituloPaginaDinamico($pagina);
-                ?>
+                <?= tituloPaginaDinamico($pagina); ?>
             </h2>
             <p>Para garantir o funcionamento adequado da aplicação, certifique-se de que o ambiente onde ela será
                 executada atenda aos seguintes requisitos mínimos:<br><br>
