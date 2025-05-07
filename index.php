@@ -27,6 +27,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="?pagina=objetivo.php" class="flex items-center space-x-2 p-2 rounded hover:bg-slate-100">
+                        <span class="iconify text-2xl" data-icon="solar:shield-check-line-duotone"></span>
+                        <span>Objetivo</span>
+                    </a>
+                </li>
+                <li>
                     <button id="toggle-submenu"
                         class="w-full flex items-center space-x-2 p-2 rounded hover:bg-slate-100">
                         <span class="iconify text-2xl" data-icon="solar:cloud-line-duotone"></span>
@@ -63,12 +69,14 @@
             $novaPagina = './src/pages/novaPagina.php';
             $configuracoes = './src/pages/configuracoes.php';
             $instalacao = './src/pages/instalacao.php';
+            $objetivo = './src/pages/objetivo.php';
 
             $paginasDisponiveis = [
                 $home,
                 $novaPagina,
                 $configuracoes,
-                $instalacao
+                $instalacao,
+                $objetivo
             ];
 
             roteamentoPaginas($paginasDisponiveis, $home);
