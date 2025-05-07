@@ -9,7 +9,7 @@
     <section class="mt-16 bg-white p-6 rounded shadow flex flex-col items-center gap-2 sm:flex-row">
         <div class="flex flex-col gap-5 ">
         <h1 class="text-3xl font-semibold flex items-center gap-2">
-    <iconify-icon icon="solar:bill-check-bold" class="text-4xl text-blue-600"></iconify-icon>
+    <iconify-icon icon="solar:file-check-line-duotone" class="text-4xl text-black-600"></iconify-icon>
     Objetivo do Manual do Projeto vCardHub
 </h1>
 
