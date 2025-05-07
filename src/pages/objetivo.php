@@ -8,7 +8,7 @@
 
     <section class="mt-16 bg-white p-6 rounded shadow flex flex-col items-center gap-2 sm:flex-row">
         <div>
-            <p>teste</p>
+            <p>teste .20</p>
         </div>
     </section>
     <script src="src/js/main.js"></script>
