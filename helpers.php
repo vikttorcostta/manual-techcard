@@ -23,8 +23,10 @@ function roteamentoPaginas(array $paginas, string $home): void
  * @param string $pagina
  * @return string
  */
-function tituloPaginaDinamico(string $pagina): string
+function tituloPaginaDinamico(?string $pagina = null): string
 {
+    $pagina ??= 'home.php';
+
     return match ($pagina) {
         'home.php' => 'vCardHub',
         'configuracoes.php' => 'Configurações Mínimas',

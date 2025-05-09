@@ -9,6 +9,7 @@
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <script src="assets/js/main.js"></script>
     <link rel="stylesheet" href="/assets/styles/styles.css">
+    <script src="src/js/main.js"></script>
 </head>
 
 <body class="flex h-screen bg-gray-100">
@@ -28,7 +29,7 @@
                 </li>
                 <li>
                     <button id="toggle-submenu"
-                        class="w-full flex items-center space-x-2 p-2 rounded hover:bg-slate-100">
+                        class="w-full flex items-center space-x-2 p-2 rounded hover:bg-slate-100 button">
                         <span class="iconify text-2xl" data-icon="solar:cloud-line-duotone"></span>
                         <span>Guia de Instalação</span>
                     </button>
@@ -75,7 +76,6 @@
             ?>
 
         </div>
-        <script src="src/js/main.js"></script>
     </main>
 </body>
 

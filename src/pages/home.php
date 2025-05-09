@@ -8,9 +8,7 @@
 
     <section class="mt-8 bg-white p-6 rounded shadow flex flex-col items-center gap-2 sm:flex-row">
         <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor autem recusandae doloribus ducimus sequi
-                deserunt laborum suscipit nemo, dolorem nisi aperiam doloremque quis fuga voluptas quos accusantium
-                tempore atque perferendis?</p>
+            <p>HOME PAGINA</p>
         </div>
     </section>
     <script src="src/js/main.js"></script>
