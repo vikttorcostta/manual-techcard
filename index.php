@@ -28,7 +28,7 @@
                     </a>
                 </li>
                 <li>
-                    <button id="toggle-submenu"
+                    <button onclick="exibirSubmenu()"
                         class="w-full flex items-center space-x-2 p-2 rounded hover:bg-slate-100 button">
                         <span class="iconify text-2xl" data-icon="solar:cloud-line-duotone"></span>
                         <span>Guia de Instalação</span>
@@ -50,7 +50,7 @@
     <main class="w-full">
 
         <div class="bg-white p-10 shadow-md flex flex-col items-center w-full fixed">
-            <button id="menu-toggle" class="md:hidden p-2 fixed top-2 right-3 text-slate-700">
+            <button onclick="exibirMenuLateral()" class="md:hidden p-2 fixed top-2 right-3 text-slate-700">
                 <span class="iconify text-4xl" data-icon="solar:hamburger-menu-line-duotone"></span>
             </button>
         </div>
@@ -58,21 +58,21 @@
         <div class="m-2">
             <?php
 
-            require_once "helpers.php";
+                require_once "helpers.php";
 
-            $home = './src/pages/home.php';
-            $novaPagina = './src/pages/novaPagina.php';
-            $configuracoes = './src/pages/configuracoes.php';
-            $instalacao = './src/pages/instalacao.php';
+                $home = './src/pages/home.php';
+                $novaPagina = './src/pages/novaPagina.php';
+                $configuracoes = './src/pages/configuracoes.php';
+                $instalacao = './src/pages/instalacao.php';
 
-            $paginasDisponiveis = [
-                $home,
-                $novaPagina,
-                $configuracoes,
-                $instalacao
-            ];
+                $paginasDisponiveis = [
+                    $home,
+                    $novaPagina,
+                    $configuracoes,
+                    $instalacao
+                ];
 
-            roteamentoPaginas($paginasDisponiveis, $home);
+                roteamentoPaginas($paginasDisponiveis, $home);
             ?>
 
         </div>
