@@ -20,10 +20,13 @@
     </style>
 </head>
 
-<body class="font-sans text-gray-800 bg-white leading-relaxed flex">
-    <button onclick="exibirMenuLateral()" class="md:hidden p-2 fixed top-2 right-3 text-slate-700">
-        <span class="iconify text-4xl text-white" data-icon="solar:hamburger-menu-line-duotone"></span>
+<body class="font-sans text-gray-800 bg-white leading-relaxed flex flex-col md:flex-row">
+    <!-- Mobile Menu Button -->
+    <button onclick="exibirMenuLateral()" class="md:hidden p-2 fixed top-2 right-3 text-slate-700 z-50 bg-blue-900 rounded">
+        <span class="iconify text-2xl text-white" data-icon="solar:hamburger-menu-line-duotone"></span>
     </button>
+    
+    <!-- Sidebar -->
     <div id="sidebar" class="w-64 bg-gray-50 border-r border-gray-200 fixed h-full overflow-y-auto p-4 hidden md:block">
         <div class="mb-8">
             <h1 class="text-xl font-bold text-blue-900 mb-1">Manual do Sistema</h1>
@@ -81,18 +84,19 @@
         </ul>
     </div>
 
-    <div class="flex-1 md:ml-64">
+    <!-- Main Content -->
+    <div class="flex-1 md:ml-64 w-full">
         <header class="bg-blue-900 text-white py-8 text-center">
             <div class="container mx-auto px-4">
-                <h1 class="text-3xl font-bold mb-2">Manual do Sistema</h1>
-                <p class="text-lg">vCardHub - Versão 1.0</p>
+                <h1 class="text-2xl md:text-3xl font-bold mb-2">Manual do Sistema</h1>
+                <p class="text-base md:text-lg">vCardHub - Versão 1.0</p>
             </div>
         </header>
 
         <div class="container mx-auto px-4 py-8 max-w-4xl">
 
             <section id="introducao" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">1. Introdução</h2>
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">1. Introdução</h2>
                 <p class="mb-4">Bem-vindo ao manual do <strong class="font-semibold">vCardHub</strong>. Este
                     documento tem como objetivo orientar os usuários sobre a utilização das principais funcionalidades
                     do sistema.</p>
@@ -104,7 +108,7 @@
             </section>
 
             <section id="configuracoes" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">2. Configurações</h2>
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">2. Configurações</h2>
                 <p class="mb-4">Para garantir o funcionamento ideal do vCardHub, é essencial que o ambiente de
                     hospedagem atenda aos requisitos mínimos de hardware e software. Este documento descreve as
                     configurações necessárias para execução em produção (Laravel Cloud ou servidor dedicado) e
@@ -114,7 +118,7 @@
                     dependências. Caso utilize o Laravel Cloud, a infraestrutura já estará pré-configurada,
                     simplificando o processo de deploy.</p>
 
-                <h3 class="text-xl font-semibold text-blue-800 mt-6 mb-2">Requisitos Mínimos</h3>
+                <h3 class="text-lg md:text-xl font-semibold text-blue-800 mt-6 mb-2">Requisitos Mínimos</h3>
                 <ul class="list-disc pl-5 mb-6 space-y-1">
                     <li>CPU: 1 vCPU (recomendado 2 vCPU para produção)</li>
                     <li>Memória RAM: 1 GB (recomendado 2 GB para produção)</li>
@@ -125,18 +129,18 @@
                     <li>Servidor Web: Apache</li>
                     <li>Cache: Redis</li>
                 </ul>
-                <h3 class="text-xl font-semibold text-blue-800 mt-6 mb-2">Requisitos Adicionais</h3>
+                <h3 class="text-lg md:text-xl font-semibold text-blue-800 mt-6 mb-2">Requisitos Adicionais</h3>
                 <ul class="list-disc pl-5 mb-6 space-y-1">
                     <li>Composer 2.5+ (para gerenciamento de dependências)</li>
                     <li>Git (para deploy contínuo)</li>
                     <li>Extensões PHP necessárias:</li>
-                    <div class="bg-black p-2 rounded-md text-white">
-                        <code>
+                    <div class="bg-black p-2 rounded-md text-white overflow-x-auto">
+                        <code class="text-sm">
                         sudo apt install php8.2-{bcmath,ctype,curl,dom,fileinfo,json,mbstring,openssl,pdo_mysql,tokenizer,xml,zip,fpm,gd}
                     </code>
                     </div>
                 </ul>
-                <h3 class="text-xl font-semibold text-blue-900 mt-6 mb-2">Observações</h3>
+                <h3 class="text-lg md:text-xl font-semibold text-blue-900 mt-6 mb-2">Observações</h3>
                 <ul class="list-disc pl-5 mt-6 space-y-1">
                     <li>O Laravel Cloud já oferece ambientes otimizados para Laravel, então você não precisa se
                         preocupar com configurações manuais de servidor.
@@ -147,36 +151,36 @@
             </section>
 
             <section id="laravelCloud" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">3. Instalação no
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">3. Instalação no
                     Laravel Cloud</h2>
                 <p class="mb-4"></p>
-                <h3 class="text-xl font-semibold text-blue-900 mt-6 mb-2">Criando uma nova aplicação</h3>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/painel-principal.png" alt="Tela de Cadastro" class="w-full">
+                <h3 class="text-lg md:text-xl font-semibold text-blue-900 mt-6 mb-2">Criando uma nova aplicação</h3>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/painel-principal.png" alt="Tela de Cadastro" class="w-full h-auto">
                 </div>
                 <p>No painel principal vai em <b>New application</b></p>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/modal-repositorio.png" alt="Tela de nova aplicação" class="w-full">
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/modal-repositorio.png" alt="Tela de nova aplicação" class="w-full h-auto">
                 </div>
                 <p>Agora vamos adicionar a plataforma de hospedagem de código, escolha o provedor de hospedagem de
                     código onde seu projeto está hospedado</p>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
                     <img src="./src/imagens/modal-escolha-repotitorio.png" alt="Tela de escolha do provedor de hospedagem de código"
-                        class="w-full">
+                        class="w-full h-auto">
                 </div>
                 <p>Com a plataforma já cadastrada, vamos selecionar o projeto que queremos subir</p>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/modal-projetos.png" alt="Tela de escolha de repositorio" class="w-full">
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/modal-projetos.png" alt="Tela de escolha de repositorio" class="w-full h-auto">
                 </div>
                 <p>Vamos agora atribuir um nome à nossa aplicação e escolher a região</p>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/modal-regiao.png" alt="Tela de nome da aplicação" class="w-full">
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/modal-regiao.png" alt="Tela de nome da aplicação" class="w-full h-auto">
                 </div>
                 <p>Agora podemos criar a aplicação, apos isso o Laravel Cloud irá clonar seu repositorio, verificar e
                     atualizar dependiancias de projetos</p>
-                <h3 class="text-xl font-semibold text-blue-900 mt-6 mb-2">Configurando o banco de dados</h3>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/dashboard-projeto.png" alt="Tela do painel principal do laravel Cloud" class="w-full">
+                <h3 class="text-lg md:text-xl font-semibold text-blue-900 mt-6 mb-2">Configurando o banco de dados</h3>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/dashboard-projeto.png" alt="Tela do painel principal do laravel Cloud" class="w-full h-auto">
                 </div>
                 <ul class="list-disc pl-5 mt-6 space-y-1">
                     <li>Estando tudo certo com a nossa aplicação teremos acesso a esse painel, onde podemos ver os
@@ -186,38 +190,38 @@
                         Agora vamos configurar o nosso banco de dados. Vai em <b>Add database</b>
                     </li>
                 </ul>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/modal-add-database.png" alt="Tela de adicionar um banco de dados" class="w-full">
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/modal-add-database.png" alt="Tela de adicionar um banco de dados" class="w-full h-auto">
                 </div>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
                     <img src="./src/imagens/modal-escolha-database.png" alt="Tela de escolha de banco de dados"
-                        class="w-full">
+                        class="w-full h-auto">
                 </div>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/provisionamento.png" alt="Notificações de espera do provisionado do banco de dados" class="w-full">
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/provisionamento.png" alt="Notificações de espera do provisionado do banco de dados" class="w-full h-auto">
                 </div>
                 <p>Aguarde o banco de dados ser provisionado, pode levar alguns minutos.</p>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/database-pronto.png" alt="Tela do painel mostrando o banco de dados pronto" class="w-full">
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/database-pronto.png" alt="Tela do painel mostrando o banco de dados pronto" class="w-full h-auto">
                 </div>
                 <p>Para acessar as configurações do banco de dados, clique no icone de três pontos do cluster de
                     database. E ative o <b>Enable public endpoint</b></p>
-                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/database-config.png" alt="Tela de configurações do banco de dados" class="w-full">
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/database-config.png" alt="Tela de configurações do banco de dados" class="w-full h-auto">
                 </div>
                 <p>Clique em <b>View credentials</b></p>
-                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
                     <img src="./src/imagens/database-credendicais.png" alt="Tela de acesso as credenciais do banco de dados"
-                        class="w-full">
+                        class="w-full h-auto">
                 </div>
-                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
                     <img src="./src/imagens/credenciais-valores.png" alt="TTela de credenciais do banco de dados"
-                        class="w-full">
+                        class="w-full h-auto">
                 </div>
                 <div class="flex flex-col gap-4">
                     <p>Para integrar seu projeto ao banco de dados, procure pelo arquivo <code>.env</code></p>
-                    <div class="bg-black text-green-600 p-2 rounded-md">
-                        <code>
+                    <div class="bg-black text-green-600 p-2 rounded-md overflow-x-auto">
+                        <code class="text-sm">
                         <pre>
 DB_CONNECTION=mysql
 DB_HOST=seu_servidor
@@ -229,18 +233,17 @@ DB_PASSWORD=sua_senha
                         </pre>
                     </code>
                     </div>
-
                 </div>
                 <br>
                 <p>Inicie a maquina</p>
-                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/inicar-maquina.png" alt="Tela de iniciar a maquina do projeto" class="w-full">
+                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/inicar-maquina.png" alt="Tela de iniciar a maquina do projeto" class="w-full h-auto">
                 </div>
                 <p>Após configurar o banco de dados e iniciar a maquina, podemos fazer o deploy e acessar o dominio
                     disponibilzado pelo
                     Laravel Cloud</p>
-                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="./src/imagens/deploy.png" alt="Tela com os borões e deploy e acesso ao dominio do projeto" class="w-full">
+                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                    <img src="./src/imagens/deploy.png" alt="Tela com os borões e deploy e acesso ao dominio" class="w-full h-auto">
                 </div>
                 <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
                     <strong>
@@ -250,28 +253,28 @@ DB_PASSWORD=sua_senha
             </section>
 
             <section id="cadastroLogin" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">4. Cadastro e Login
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">4. Cadastro e Login</h2>
             </section>
 
             <section id="painelPrincipal" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">5. Painel principal
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">5. Painel principal</h2>
             </section>
 
             <section id="modulos" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">6. Módulos Principais
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">6. Módulos Principais
                 </h2>
 
                 <div id="modulo1" class="mb-10 pt-4">
-                    <h3 class="text-xl font-semibold text-blue-800 mb-3">6.1 Módulo 1</h3>
+                    <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1 Módulo 1</h3>
                 </div>
             </section>
 
             <section id="duvidas" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">7. Dúvidas Frequentes
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">7. Dúvidas Frequentes</h2>
             </section>
 
             <section id="contato" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">8. Contato e Suporte
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">8. Contato e Suporte
                 </h2>
                 <p class="mb-4">Em caso de dúvidas ou problemas com o sistema, entre em contato com nossa equipe de
                     suporte:</p>
@@ -294,7 +297,9 @@ DB_PASSWORD=sua_senha
         </footer>
     </div>
 
-    <script src="src/js/main.js"></script>
+    <script src="./src/js/main.js">
+        
+    </script>
 </body>
 
 </html>
