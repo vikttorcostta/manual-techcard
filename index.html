@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual do Sistema - Nome do Sistema</title>
+    <title>Manual do Sistema - vCardHub</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual Techcard</title>
@@ -22,12 +22,12 @@
 
 <body class="font-sans text-gray-800 bg-white leading-relaxed flex">
     <button onclick="exibirMenuLateral()" class="md:hidden p-2 fixed top-2 right-3 text-slate-700">
-        <span class="iconify text-4xl" data-icon="solar:hamburger-menu-line-duotone"></span>
+        <span class="iconify text-4xl text-white" data-icon="solar:hamburger-menu-line-duotone"></span>
     </button>
     <div id="sidebar" class="w-64 bg-gray-50 border-r border-gray-200 fixed h-full overflow-y-auto p-4 hidden md:block">
-        <div class="mb-6">
+        <div class="mb-8">
             <h1 class="text-xl font-bold text-blue-900 mb-1">Manual do Sistema</h1>
-            <p class="text-sm text-gray-600">Versão 2.0</p>
+            <p class="text-sm text-gray-600">Versão 1.0</p>
         </div>
 
         <h3 class="text-lg font-semibold text-blue-900 mb-4">Sumário</h3>
@@ -38,43 +38,44 @@
                     Introdução</a>
             </li>
             <li>
-                <a href="#requisitos"
+                <a href="#configuracoes"
                     class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">2.
-                    Requisitos</a>
+                    Configurações</a>
             </li>
             <li>
-                <a href="#acesso"
+                <a href="#laravelCloud"
                     class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">3.
-                    Acesso</a>
+                    Instalação no Laravel Cloud</a>
+            </li>
+
+            <li>
+                <a href="#cadastroLogin"
+                    class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">4.
+                    Cadastro e login</a>
+            </li>
+            <li>
+                <a href="#painelPrincipal"
+                    class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">5.
+                    Painel Principal</a>
             </li>
             <li class="mt-4">
                 <span class="block px-3 py-2 font-medium text-gray-700">4. Módulos</span>
                 <ul class="ml-4 mt-2 space-y-2">
                     <li>
                         <a href="#modulo1"
-                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">4.1
-                            Cadastros</a>
-                    </li>
-                    <li>
-                        <a href="#modulo2"
-                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">4.2
-                            Relatórios</a>
-                    </li>
-                    <li>
-                        <a href="#modulo3"
-                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">4.3
-                            Configurações</a>
+                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">5.1
+                            Modulo 1</a>
                     </li>
                 </ul>
             </li>
             <li>
                 <a href="#duvidas"
-                    class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">5.
+                    class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.
                     Dúvidas</a>
             </li>
             <li>
                 <a href="#contato"
-                    class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.
+                    class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">7.
                     Suporte</a>
             </li>
         </ul>
@@ -83,141 +84,190 @@
     <div class="flex-1 md:ml-64">
         <header class="bg-blue-900 text-white py-8 text-center">
             <div class="container mx-auto px-4">
-                <h1 class="text-4xl font-bold mb-2">Manual do Sistema</h1>
-                <p class="text-xl">Nome do Sistema - Versão 2.0</p>
+                <h1 class="text-3xl font-bold mb-2">Manual do Sistema</h1>
+                <p class="text-lg">vCardHub - Versão 1.0</p>
             </div>
         </header>
 
         <div class="container mx-auto px-4 py-8 max-w-4xl">
-            <!-- Seção Introdução -->
+
             <section id="introducao" class="mb-12 pt-4">
                 <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">1. Introdução</h2>
-                <p class="mb-4">Bem-vindo ao manual do <strong class="font-semibold">Nome do Sistema</strong>. Este
+                <p class="mb-4">Bem-vindo ao manual do <strong class="font-semibold">vCardHub</strong>. Este
                     documento tem como objetivo orientar os usuários sobre a utilização das principais funcionalidades
                     do sistema.</p>
 
                 <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-4">
-                    <p class="font-medium">Nota:</strong> Este manual está atualizado para a versão 2.0 do sistema,
-                        lançada em Janeiro de 2023.</p>
+                    <p class="font-medium">Nota:</strong> Este manual está atualizado para a Versão 1.0 do sistema,
+                        lançada em 10 de Março de 2025</p>
                 </div>
             </section>
 
-            <section id="requisitos" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">2. Requisitos do
-                    Sistema</h2>
-                <p class="mb-4">Para utilizar o sistema corretamente, seu computador deve atender aos seguintes
-                    requisitos:</p>
+            <section id="configuracoes" class="mb-12 pt-4">
+                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">2. Configurações</h2>
+                <p class="mb-4">Para garantir o funcionamento ideal do vCardHub, é essencial que o ambiente de
+                    hospedagem atenda aos requisitos mínimos de hardware e software. Este documento descreve as
+                    configurações necessárias para execução em produção (Laravel Cloud ou servidor dedicado) e
+                    desenvolvimento local, assegurando desempenho, segurança e compatibilidade com o Laravel 12.
+
+                    Siga as especificações abaixo para evitar problemas de instalação, lentidão ou incompatibilidade de
+                    dependências. Caso utilize o Laravel Cloud, a infraestrutura já estará pré-configurada,
+                    simplificando o processo de deploy.</p>
 
                 <h3 class="text-xl font-semibold text-blue-800 mt-6 mb-2">Requisitos Mínimos</h3>
                 <ul class="list-disc pl-5 mb-6 space-y-1">
-                    <li>Navegador: Google Chrome 80+, Firefox 75+, Edge 80+ ou Safari 13+</li>
-                    <li>Resolução mínima de tela: 1024x768 pixels</li>
-                    <li>Conexão à internet com velocidade mínima de 2 Mbps</li>
+                    <li>CPU: 1 vCPU (recomendado 2 vCPU para produção)</li>
+                    <li>Memória RAM: 1 GB (recomendado 2 GB para produção)</li>
+                    <li>Armazenamento: 20 GB SSD</li>
+                    <li>Sistema Operacional: Linux (Ubuntu 22.04 LTS)</li>
+                    <li>PHP: 8.0 ou superior</li>
+                    <li>Banco de Dados: MySQL 8.0</li>
+                    <li>Servidor Web: Apache</li>
+                    <li>Cache: Redis</li>
                 </ul>
-
-                <h3 class="text-xl font-semibold text-blue-800 mt-6 mb-2">Requisitos Recomendados</h3>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li>Navegador: Google Chrome (última versão)</li>
-                    <li>Resolução de tela: 1366x768 pixels ou superior</li>
-                    <li>Conexão à internet com velocidade mínima de 5 Mbps</li>
+                <h3 class="text-xl font-semibold text-blue-800 mt-6 mb-2">Requisitos Adicionais</h3>
+                <ul class="list-disc pl-5 mb-6 space-y-1">
+                    <li>Composer 2.5+ (para gerenciamento de dependências)</li>
+                    <li>Git (para deploy contínuo)</li>
+                    <li>Extensões PHP necessárias:</li>
+                    <div class="bg-black p-2 rounded-md text-white">
+                        <code>
+                        sudo apt install php8.2-{bcmath,ctype,curl,dom,fileinfo,json,mbstring,openssl,pdo_mysql,tokenizer,xml,zip,fpm,gd}
+                    </code>
+                    </div>
+                </ul>
+                <h3 class="text-xl font-semibold text-blue-900 mt-6 mb-2">Observações</h3>
+                <ul class="list-disc pl-5 mt-6 space-y-1">
+                    <li>O Laravel Cloud já oferece ambientes otimizados para Laravel, então você não precisa se
+                        preocupar com configurações manuais de servidor.
+                    </li>
+                    <li>Se estiver usando um servidor VPS/Cloud próprio, siga os requisitos acima.</li>
+                    <li>Para desenvolvimento local, o Laravel Sail (Docker) ou Laragon/XAMPP são boas opções.</li>
                 </ul>
             </section>
 
-            <section id="acesso" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">3. Acesso ao Sistema
-                </h2>
-                <p class="mb-4">Para acessar o sistema, siga os passos abaixo:</p>
-
-                <ol class="list-decimal pl-5 mb-6 space-y-2">
-                    <li>Abra seu navegador de internet</li>
-                    <li>Acesse o endereço: <code
-                            class="bg-gray-100 px-2 py-1 rounded">https://sistema.exemplo.com.br</code></li>
-                    <li>Na tela de login, informe seu usuário e senha</li>
-                    <li>Clique no botão "Entrar"</li>
-                </ol>
-
+            <section id="laravelCloud" class="mb-12 pt-4">
+                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">3. Instalação no
+                    Laravel Cloud</h2>
+                <p class="mb-4"></p>
+                <h3 class="text-xl font-semibold text-blue-900 mt-6 mb-2">Criando uma nova aplicação</h3>
                 <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                    <img src="imagens/tela-login.jpg" alt="Tela de Login do Sistema" class="w-full">
+                    <img src="./src/imagens/painel-principal.png" alt="Tela de Cadastro" class="w-full">
                 </div>
+                <p>No painel principal vai em <b>New application</b></p>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/modal-repositorio.png" alt="Tela de Cadastro" class="w-full">
+                </div>
+                <p>Agora vamos adicionar a plataforma de hospedagem de código, escolha o provedor de hospedagem de
+                    código onde seu projeto está hospedado</p>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/modal-escolha-repotitorio.png" alt="Tela de escolha de repositorio"
+                        class="w-full">
+                </div>
+                <p>Com a plataforma já cadastrada, vamos selecionar o projeto que queremos subir</p>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/modal-projetos.png" alt="Tela de escolha de repositorio" class="w-full">
+                </div>
+                <p>Vamos agora atribuir um nome à nossa aplicação e escolher a região</p>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/modal-regiao.png" alt="Tela de escolha de repositorio" class="w-full">
+                </div>
+                <p>Agora podemos criar a aplicação, apos isso o Laravel Cloud irá clonar seu repositorio, verificar e
+                    atualizar dependiancias de projetos</p>
+                <h3 class="text-xl font-semibold text-blue-900 mt-6 mb-2">Configurando o banco de dados</h3>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/dashboard-projeto.png" alt="Tela de escolha de repositorio" class="w-full">
+                </div>
+                <ul class="list-disc pl-5 mt-6 space-y-1">
+                    <li>Estando tudo certo com a nossa aplicação teremos acesso a esse painel, onde podemos ver os
+                        clusters sendo eles: rede, domínios, aplicação, banco de dados, cache e armazenamento.
+                    </li>
+                    <li>
+                        Agora vamos configurar o nosso banco de dados. Vai em <b>Add database</b>
+                    </li>
+                </ul>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/modal-add-database.png" alt="Tela de escolha de repositorio" class="w-full">
+                </div>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/modal-escolha-database.png" alt="Tela de escolha de repositorio"
+                        class="w-full">
+                </div>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/provisionamento.png" alt="Tela de escolha de repositorio" class="w-full">
+                </div>
+                <p>Aguarde o banco de dados ser provisionado, pode levar alguns minutos.</p>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/database-pronto.png" alt="Tela de escolha de repositorio" class="w-full">
+                </div>
+                <p>Para acessar as configurações do banco de dados, clique no icone de três pontos do cluster de
+                    database. E ative o <b>Enable public endpoint</b></p>
+                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/database-config.png" alt="Tela de escolha de repositorio" class="w-full">
+                </div>
+                <p>Clique em <b>View credentials</b></p>
+                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/database-credendicais.png" alt="Tela de escolha de repositorio"
+                        class="w-full">
+                </div>
+                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/credenciais-valores.png" alt="Tela de escolha de repositorio"
+                        class="w-full">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p>Para integrar seu projeto ao banco de dados, procure pelo arquivo <code>.env</code></p>
+                    <div class="bg-black text-green-600 p-2 rounded-md">
+                        <code>
+                        <pre>
+DB_CONNECTION=mysql
+DB_HOST=seu_servidor
+DB_PORT=3306
+DB_DATABASE=seu_banco_de_dados
+DB_USERNAME=seu_nome_de_usuario
+DB_PASSWORD=sua_senha
+//Passe as informações diponibilizadas pelo Laravel Cloud para integrar o banco de dados
+                        </pre>
+                    </code>
+                    </div>
 
-                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6">
-                    <p class="font-medium">Atenção:</strong> Caso esqueça sua senha, clique no link "Esqueci minha
-                        senha" e siga as instruções para redefinição.</p>
                 </div>
+                <br>
+                <p>Inicie a maquina</p>
+                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/inicar-maquina.png" alt="Tela de escolha de repositorio" class="w-full">
+                </div>
+                <p>Após configurar o banco de dados e iniciar a maquina, podemos fazer o deploy e acessar o dominio
+                    disponibilzado pelo
+                    Laravel Cloud</p>
+                <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full">
+                    <img src="./src/imagens/deploy.png" alt="Tela de escolha de repositorio" class="w-full">
+                </div>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
+                    <strong>
+                        <p class="font-medium">Nota: Caso já tenha um domínio cadastrado em uma plataforma de DNS, você pode fazer essa personalização.</p>
+                    </strong>
+                </div>
+            </section>
+
+            <section id="cadastroLogin" class="mb-12 pt-4">
+                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">4. Cadastro e Login
+            </section>
+
+            <section id="painelPrincipal" class="mb-12 pt-4">
+                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">5. Painel principal
             </section>
 
             <section id="modulos" class="mb-12 pt-4">
-                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">4. Módulos Principais
+                <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">6. Módulos Principais
                 </h2>
 
                 <div id="modulo1" class="mb-10 pt-4">
-                    <h3 class="text-xl font-semibold text-blue-800 mb-3">4.1 Módulo de Cadastros</h3>
-                    <p class="mb-4">O módulo de cadastros permite a inclusão, alteração e exclusão de registros no
-                        sistema.</p>
-
-                    <h4 class="font-medium text-gray-700 mb-2">Cadastrando um novo item:</h4>
-                    <ol class="list-decimal pl-5 mb-6 space-y-2">
-                        <li>Acesse o menu "Cadastros"</li>
-                        <li>Selecione a opção "Novo Item"</li>
-                        <li>Preencha os campos obrigatórios (marcados com *)</li>
-                        <li>Clique em "Salvar"</li>
-                    </ol>
-
-                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full">
-                        <img src="imagens/tela-cadastro.jpg" alt="Tela de Cadastro" class="w-full">
-                    </div>
-                </div>
-
-                <div id="modulo2" class="mb-10 pt-4">
-                    <h3 class="text-xl font-semibold text-blue-800 mb-3">4.2 Módulo de Relatórios</h3>
-                    <p class="mb-4">O módulo de relatórios permite a geração de diversos tipos de relatórios analíticos.
-                    </p>
-
-                    <h4 class="font-medium text-gray-700 mb-2">Gerando um relatório:</h4>
-                    <ol class="list-decimal pl-5 space-y-2">
-                        <li>Acesse o menu "Relatórios"</li>
-                        <li>Selecione o tipo de relatório desejado</li>
-                        <li>Defina os filtros necessários</li>
-                        <li>Clique em "Gerar Relatório"</li>
-                        <li>Para exportar, clique no ícone correspondente (PDF, Excel ou CSV)</li>
-                    </ol>
-                </div>
-
-                <div id="modulo3" class="pt-4">
-                    <h3 class="text-xl font-semibold text-blue-800 mb-3">4.3 Módulo de Configurações</h3>
-                    <p class="mb-4">Neste módulo você pode personalizar diversas configurações do sistema conforme suas
-                        necessidades.</p>
-
-                    <h4 class="font-medium text-gray-700 mb-2">Alterando configurações:</h4>
-                    <ol class="list-decimal pl-5 mb-6 space-y-2">
-                        <li>Acesse o menu "Configurações"</li>
-                        <li>Selecione a categoria desejada</li>
-                        <li>Altere os parâmetros conforme necessário</li>
-                        <li>Clique em "Salvar" para aplicar as alterações</li>
-                    </ol>
-
-                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
-                        <p class="font-medium">Nota:</strong> Algumas configurações podem exigir privilégios de
-                            administrador.</p>
-                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">5.1 Módulo 1</h3>
                 </div>
             </section>
 
             <section id="duvidas" class="mb-12 pt-4">
                 <h2 class="text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">5. Dúvidas Frequentes
-                </h2>
-
-                <h3 class="text-lg font-semibold text-gray-700 mt-6 mb-2">Como altero minha senha?</h3>
-                <p class="mb-4">Acesse o menu "Meu Perfil" e clique na opção "Alterar Senha". Você precisará informar a
-                    senha atual antes de definir uma nova.</p>
-
-                <h3 class="text-lg font-semibold text-gray-700 mt-6 mb-2">O sistema está lento, o que fazer?</h3>
-                <p class="mb-4">Verifique sua conexão com a internet e tente limpar o cache do navegador. Caso o
-                    problema persista, entre em contato com o suporte.</p>
-
-                <h3 class="text-lg font-semibold text-gray-700 mt-6 mb-2">Como faço para exportar dados?</h3>
-                <p class="mb-4">A maioria das telas de listagem possui opções de exportação para Excel, PDF ou CSV.
-                    Procure pelos ícones correspondentes na parte superior da tela.</p>
             </section>
 
             <section id="contato" class="mb-12 pt-4">
@@ -238,8 +288,8 @@
 
         <footer class="bg-gray-50 text-center py-8 mt-12">
             <div class="container mx-auto px-4">
-                <p class="text-gray-600">© 2023 Nome da Empresa. Todos os direitos reservados.</p>
-                <p class="text-gray-500 text-sm mt-2">Última atualização: 15/01/2023</p>
+                <p class="text-gray-600">© 2025 Equipe Bugados. Todos os direitos reservados.</p>
+                <p class="text-gray-500 text-sm mt-2">Última atualização: 10/05/2025</p>
             </div>
         </footer>
     </div>
