@@ -65,10 +65,9 @@
                 <span class="block px-3 py-2 font-semibold text-blue-900">6. Módulos</span>
                 <ul class="ml-4 mt-2 space-y-2">
                     <li>
-                        <a href="#modulo1"
-                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.1
-                            Modulo 1</a>
-                        <a href="#modulo2" class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.2 Modulo Usuarios</a>
+                        <a href="#produtos"
+                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.1 Módulo Produtos</a>
+                        <a href="#usuarios" class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.2 Modulo Usuários</a>
                     </li>
                 </ul>
             </li>
@@ -262,11 +261,62 @@ DB_PASSWORD=sua_senha
             </section>
 
             <section id="modulos" class="mb-12 pt-4">
-                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">6. Módulos Principais
-                </h2>
-
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">6. Módulos Principais</h2>
+                <!-- módulo usuários -->
                 <div id="modulo1" class="mb-10 pt-4">
-                    <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1 Módulo Produto</h3>
+                    <div id="usuarios" class="mb-10 pt-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1 Módulo Usuários</h3>
+
+                        <p>No painel principal vá para a seção <b>Usuários</b> nela clique na opção <b>Novo Usuario</b></p>
+
+                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                            <img src="./src/imagens/Usuários_Inicial.png" alt="Tela Inicial dos Usuarios" class="w-full h-auto">
+                        </div>
+
+                        <p>
+                            Na aba de Novo Usuario preencha os campos obrigatorios e clique na opção create.
+                        </p>
+
+                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                            <img src="./src/imagens/Create Usuário.png" alt="Tela de criação de Usuários" class="w-full h-auto">
+                        </div>
+
+                        <P>
+                            Ao criar o usuário o mesmo ficará visivel no painel inicial da seção usuários.
+                        </P>
+
+                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                            <img src="./src/imagens/Usuários_atualizados.png" alt="Tela inicial de usuários atualizados" class="w-full h-auto">
+                        </div>
+
+                        <p>
+                            O usuário pode editar as informações escritas anteriormente.
+                        </p>
+
+                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                            <img src="./src/imagens/Edit_Usuário.png" alt="Tela de edição dos usuários" class="w-full h-auto">
+                        </div>
+
+                        <p>
+                            O usuário pode visualizar as informações do novo usuários
+                        </p>
+
+                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                        <img src="./src/imagens/Usuários_Visualizar.png" alt="Tela de visualização dos usuários" class="w-full h-auto">
+                        </div>
+
+                        <p>
+                            O usuário pode deletar o novo usuários já criado
+                        </p>
+
+                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                        <img src="./src/imagens/Usuários_Delete.png" alt="Tela de exclusão dos usuários" class="w-full h-auto">
+                    </div>
+                </div>
+
+                <!-- módulo produtos -->
+                 <div>
+                     <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1 Módulo Produtos</h3>
                         <p>No painel princiapal vá para seção <b>Produtos</b> nela clique na opção <b>Criar Produto</b></p>
 
                         <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
@@ -310,59 +360,7 @@ DB_PASSWORD=sua_senha
 
                         <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
                         <img src="./src/imagens/Produtos_Visualizar.png" alt="Tela de criação dos Produtos" class="w-full h-auto">
-                        </div>
-                </div>
-                </div>
-
-                <div id="modulo2" class="mb-10 pt-4">
-                    <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1 Módulo Usuários</h3>
-
-                    <p>No painel principal vá para a seção <b>Usuários</b> nela clique na opção <b>Novo Usuario</b></p>
-
-                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/Usuários_Inicial.png" alt="Tela Inicial dos Usuarios" class="w-full h-auto">
-                    </div>
-
-                    <p>
-                        Na aba de Novo Usuario preencha os campos obrigatorios e clique na opção create.
-                    </p>
-
-                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/Create Usuário.png" alt="Tela de criação de Usuários" class="w-full h-auto">
-                    </div>
-
-                    <P>
-                        Ao criar o usuário o mesmo ficará visivel no painel inicial da seção usuários.
-                    </P>
-
-                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/Usuários_atualizados.png" alt="Tela inicial de usuários atualizados" class="w-full h-auto">
-                    </div>
-
-                    <p>
-                        O usuário pode editar as informações escritas anteriormente.
-                    </p>
-
-                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/Edit_Usuário.png" alt="Tela de edição dos usuários" class="w-full h-auto">
-                    </div>
-
-                    <p>
-                        O usuário pode visualizar as informações do novo usuários
-                    </p>
-
-                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/Usuários_Visualizar.png" alt="Tela de visualização dos usuários" class="w-full h-auto">
-                    </div>
-
-                    <p>
-                        O usuário pode deletar o novo usuários já criado
-                    </p>
-
-                     <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/Usuários_Delete.png" alt="Tela de exclusão dos usuários" class="w-full h-auto">
-                    </div>
-                </div>
+                 </div>
             </section>
 
             <section id="duvidas" class="mb-12 pt-4">
