@@ -67,7 +67,8 @@
                     <li>
                         <a href="#produtos"
                             class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.1 Módulo Produtos</a>
-                        <a href="#usuarios" class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.2 Modulo Usuários</a>
+                        <a href="#usuarios" class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.2 Módulo Usuários</a>
+                         <a href="#modulo-link" class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.5 Módulo Link</a>
                     </li>
                     <li>
                         <a href="#empresas"
@@ -424,6 +425,167 @@ DB_PASSWORD=sua_senha
 
     
             </section>
+
+  <!-- Criar Link -->
+
+<section id="modulo-link" class="p-6 max-w-4xl mx-auto">
+  <h2 class="text-xl font-bold text-blue-800 mb-4">1. Criar Link</h2>
+
+  <p>No painel principal, vá até a seção <b>Criar Link</b>. Nela, você poderá adicionar um novo link personalizado ao sistema. Para isso, siga as etapas abaixo:</p>
+
+  <ul class="list-disc list-inside my-4 text-gray-700">
+    <li>Preencha o campo <b>Título do Link</b> com um nome identificável, como "Site da Empresa".</li>
+    <li>No campo <b>URL do Link</b>, insira o endereço completo do link, como por exemplo <i>https://www.exemplo.com</i>.</li>
+    <li>Na opção <b>Status</b>, escolha entre "Ativo" (para links que devem ser exibidos) ou "Inativo" (para manter oculto no sistema).</li>
+  </ul>
+
+  <p class= "mb-6" >
+  Depois de preencher todos os campos, clique no botão <b>Criar</b> para salvar o link no sistema. O novo link será exibido na lista de links disponíveis.</p>
+
+  <img src="src/imagens/Criar Link.png" alt="Tela Criar Link" class="mb-6 rounded shadow">
+
+  <form class="space-y-4">
+    <input type="text" placeholder="Título do Link" class="w-full p-2 border rounded">
+    <input type="url" placeholder="URL do Link" class="w-full p-2 border rounded">
+    <select class="w-full p-2 border rounded">
+      <option>Ativo</option>
+      <option>Inativo</option>
+    </select>
+    <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Criar</button>
+  </form>
+</section>
+
+  <!-- Editar Link -->
+<section id="editar-link" class="p-6 max-w-4xl mx-auto">
+  <h2 class="text-xl font-bold text-blue-800 mb-6">2. Editar Link</h2>
+
+  <p>Para editar um link já existente no sistema, siga as instruções abaixo:</p>
+
+  <ul class="list-disc list-inside my-4 text-gray-700">
+    <li>No painel principal, localize a seção <b>Links</b> e identifique o link que deseja editar.</li>
+    <li>Clique no botão <b>Editar</b> correspondente ao link desejado.</li>
+    <li>Na tela de edição, o sistema irá exibir os campos preenchidos com os dados atuais do link:</li>
+    <ul class="ml-6 list-disc">
+      <li>Altere o <b>Título</b> se necessário.</li>
+      <li>Modifique a <b>URL</b> conforme desejado (ex: corrigir ou atualizar o endereço).</li>
+      <li>Atualize o <b>Status</b> para "Ativo" ou "Inativo", de acordo com a visibilidade desejada.</li>
+    </ul>
+    <li>Após realizar as alterações, clique em <b>Salvar</b> para confirmar as modificações.</li>
+  </ul>
+
+ <p class="mb-4">
+  O sistema irá atualizar o link na base de dados e ele será exibido com as novas informações na lista principal.
+</p>
+
+  <img src="src/imagens/Editar Link.png" alt="Tela Editar Link" class="mb-6 rounded shadow">
+
+  <form class="space-y-4">
+    <input type="text" value="Título Existente" class="w-full p-2 border rounded">
+    <input type="url" value="https://exemplo.com" class="w-full p-2 border rounded">
+    <select class="w-full p-2 border rounded">
+      <option selected>Ativo</option>
+      <option>Inativo</option>
+    </select>
+    <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Salvar</button>
+  </form>
+</section>
+
+ <!-- Página Inicial de Links -->
+<section id="pagina-inicial-links" class="p-6 max-w-6xl mx-auto">
+  <h2 class="text-xl font-bold text-blue-800 mb-4">3. Página Inicial de Links</h2>
+
+  <p>Na página inicial da seção <b>Links</b>, o usuário pode visualizar todos os links já cadastrados no sistema. Esta tela permite uma visão geral e rápida dos principais dados de cada link.</p>
+
+  <ul class="list-disc list-inside my-4 text-gray-700">
+    <li><b>Título:</b> Exibe o nome atribuído ao link no momento do cadastro ou edição.</li>
+    <li><b>URL:</b> Mostra o endereço completo associado ao link, com possibilidade de acesso clicando diretamente no texto azul sublinhado.</li>
+    <li><b>Status:</b> Indica se o link está ativo (visível) ou inativo (oculto).</li>
+    <li><b>Ações:</b> Permite ao usuário <b>Editar</b> ou <b>Excluir</b> o link, conforme a necessidade.</li>
+  </ul>
+
+  <p>Essa interface facilita a gestão de links existentes, possibilitando atualizações rápidas e exclusões sempre que necessário.</p>
+
+  <img src="src/imagens/Links_Pagina_Inicial.png" alt="Página Inicial Links" class="mb-4 rounded shadow">
+
+  <table class="w-full text-sm border">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="p-2">Título</th>
+        <th class="p-2">URL</th>
+        <th class="p-2">Status</th>
+        <th class="p-2">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-t">
+        <td class="p-2">Exemplo Link</td>
+        <td class="p-2 text-blue-600 underline">https://exemplo.com</td>
+        <td class="p-2 text-green-600">Ativo</td>
+        <td class="p-2 space-x-2">
+          <button class="text-blue-600 hover:underline">Editar</button>
+          <button class="text-red-600 hover:underline">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+  <!-- Excluir Link -->
+<section id="excluir-link" class="p-6 max-w-4xl mx-auto">
+  <h2 class="text-xl font-bold text-red-700 mb-4">4. Excluir Link</h2>
+
+  <p>Ao clicar em <b>Excluir</b> em um link existente, o sistema solicitará uma confirmação para evitar exclusões acidentais.</p>
+
+  <ul class="list-disc list-inside my-4 text-gray-700">
+    <li>Uma mensagem será exibida com o nome do link a ser excluído, perguntando se deseja realmente removê-lo.</li>
+    <li>Se clicar em <b>Cancelar</b>, a ação será interrompida e o link permanecerá no sistema.</li>
+    <li>Se clicar em <b>Excluir</b>, o link será permanentemente removido do banco de dados e não poderá ser recuperado.</li>
+  </ul>
+
+  <p class="mb-4">
+    Essa funcionalidade garante maior controle e segurança na administração dos links cadastrados.</p>
+
+  <img src="src/imagens/Excluir_Produto.jpg" alt="Tela Excluir Link" class="mb-4 rounded shadow">
+
+  <p>Tem certeza que deseja excluir o link <strong>"Exemplo Link"</strong>?</p>
+  <div class="mt-4 flex justify-end gap-4">
+    <button class="bg-gray-200 px-4 py-2 rounded">Cancelar</button>
+    <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Excluir</button>
+  </div>
+</section>
+
+
+  <!-- Visualizar Link -->
+<section id="visualizar-link" class="p-6 max-w-4xl mx-auto">
+  <h2 class="text-xl font-bold text-blue-800 mb-4">5. Visualizar Link</h2>
+
+  <p>Na tela de <b>Visualização de Link</b>, o usuário pode consultar os detalhes completos de um link específico sem alterá-lo.</p>
+
+  <ul class="list-disc list-inside my-4 text-gray-700">
+    <li><b>Título:</b> Mostra o nome dado ao link.</li>
+    <li><b>URL:</b> Exibe o endereço do link. Ao clicar nele, o sistema redireciona o usuário para a página correspondente.</li>
+    <li><b>Status:</b> Indica se o link está ativo ou inativo no sistema.</li>
+  </ul>
+
+  <p class="mb-4">
+
+  Essa visualização é útil para conferência rápida antes de tomar decisões como editar ou excluir o link.</p>
+
+  <img src="src/imagens/Links_Visualizar.png" alt="Visualizar Link" class="mb-4 rounded shadow">
+
+  <div class="space-y-2">
+    <p><strong>Título:</strong> Exemplo Link</p>
+    <p><strong>URL:</strong> <a href="https://exemplo.com" class="text-blue-600 underline">https://exemplo.com</a></p>
+    <p><strong>Status:</strong> Ativo</p>
+  </div>
+  <button class="mt-4 bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">Voltar</button>
+</section>
+
+
+</body>
+</html>
+
 
             <section id="duvidas" class="mb-12 pt-4">
                 <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">7. Dúvidas Frequentes</h2>
