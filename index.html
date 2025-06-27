@@ -22,10 +22,11 @@
 
 <body class="font-sans text-gray-800 bg-white leading-relaxed flex flex-col md:flex-row">
     <!-- Mobile Menu Button -->
-    <button onclick="exibirMenuLateral()" class="md:hidden p-2 fixed top-2 right-3 text-slate-700 z-50 bg-blue-900 rounded">
+    <button onclick="exibirMenuLateral()"
+        class="md:hidden p-2 fixed top-2 right-3 text-slate-700 z-50 bg-blue-900 rounded">
         <span class="iconify text-2xl text-white" data-icon="solar:hamburger-menu-line-duotone"></span>
     </button>
-    
+
     <!-- Sidebar -->
     <div id="sidebar" class="w-64 bg-gray-50 border-r border-gray-200 fixed h-full overflow-y-auto p-4 hidden md:block">
         <div class="mb-8">
@@ -64,18 +65,27 @@
             <li class="mt-4">
                 <span class="block px-3 py-2 font-semibold text-blue-900">6. Módulos</span>
                 <ul class="ml-4 mt-2 space-y-2">
+                    
                     <li>
                         <a href="#usuarios"
-                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.1 Módulo Usuários</a>
-                        <a href="#produtos" class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.2 Módulo Produtos</a>
-                        
-                        <a href="#empresas"
-                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.3 Módulo Empresa</a>
-                        <a href="#perfil" class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.4 Modulo Perfil</a>
+                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.1
+                            Módulo Usuários</a>
+                        <a href="#produtos"
+                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.2
+                            Módulo Produtos</a>
 
-                         <a href="#modulo-link" class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.5 Módulo Link</a>
+                        <a href="#empresas"
+                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.3
+                            Módulo Empresa</a>
+                        <a href="#perfil"
+                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.4
+                            Modulo Perfil</a>
+
+                        <a href="#modulo-link"
+                            class="block px-3 py-2 text-blue-900 hover:bg-blue-100 rounded transition sidebar-link">6.5
+                            Módulo Link</a>
                     </li>
-                    
+
                 </ul>
             </li>
             <li>
@@ -103,7 +113,8 @@
         <div class="container mx-auto px-4 py-8 max-w-4xl">
 
             <section id="introducao" class="mb-12 pt-4">
-                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">1. Introdução</h2>
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">1.
+                    Introdução</h2>
                 <p class="mb-4">Bem-vindo ao manual do <strong class="font-semibold">vCardHub</strong>. Este
                     documento tem como objetivo orientar os usuários sobre a utilização das principais funcionalidades
                     do sistema.</p>
@@ -115,7 +126,8 @@
             </section>
 
             <section id="configuracoes" class="mb-12 pt-4">
-                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">2. Configurações</h2>
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">2.
+                    Configurações</h2>
                 <p class="mb-4">Para garantir o funcionamento ideal do vCardHub, é essencial que o ambiente de
                     hospedagem atenda aos requisitos mínimos de hardware e software. Este documento descreve as
                     configurações necessárias para execução em produção (Laravel Cloud ou servidor dedicado) e
@@ -158,7 +170,8 @@
             </section>
 
             <section id="laravelCloud" class="mb-12 pt-4">
-                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">3. Instalação no
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">3.
+                    Instalação no
                     Laravel Cloud</h2>
                 <p class="mb-4"></p>
                 <h3 class="text-lg md:text-xl font-semibold text-blue-900 mt-6 mb-2">Criando uma nova aplicação</h3>
@@ -172,12 +185,13 @@
                 <p>Agora vamos adicionar a plataforma de hospedagem de código, escolha o provedor de hospedagem de
                     código onde seu projeto está hospedado</p>
                 <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/modal-escolha-repotitorio.png" alt="Tela de escolha do provedor de hospedagem de código"
-                        class="w-full h-auto">
+                    <img src="./src/imagens/modal-escolha-repotitorio.png"
+                        alt="Tela de escolha do provedor de hospedagem de código" class="w-full h-auto">
                 </div>
                 <p>Com a plataforma já cadastrada, vamos selecionar o projeto que queremos subir</p>
                 <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/modal-projetos.png" alt="Tela de escolha de repositorio" class="w-full h-auto">
+                    <img src="./src/imagens/modal-projetos.png" alt="Tela de escolha de repositorio"
+                        class="w-full h-auto">
                 </div>
                 <p>Vamos agora atribuir um nome à nossa aplicação e escolher a região</p>
                 <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
@@ -187,7 +201,8 @@
                     atualizar dependiancias de projetos</p>
                 <h3 class="text-lg md:text-xl font-semibold text-blue-900 mt-6 mb-2">Configurando o banco de dados</h3>
                 <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/dashboard-projeto.png" alt="Tela do painel principal do laravel Cloud" class="w-full h-auto">
+                    <img src="./src/imagens/dashboard-projeto.png" alt="Tela do painel principal do laravel Cloud"
+                        class="w-full h-auto">
                 </div>
                 <ul class="list-disc pl-5 mt-6 space-y-1">
                     <li>Estando tudo certo com a nossa aplicação teremos acesso a esse painel, onde podemos ver os
@@ -198,28 +213,32 @@
                     </li>
                 </ul>
                 <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/modal-add-database.png" alt="Tela de adicionar um banco de dados" class="w-full h-auto">
+                    <img src="./src/imagens/modal-add-database.png" alt="Tela de adicionar um banco de dados"
+                        class="w-full h-auto">
                 </div>
                 <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
                     <img src="./src/imagens/modal-escolha-database.png" alt="Tela de escolha de banco de dados"
                         class="w-full h-auto">
                 </div>
                 <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/provisionamento.png" alt="Notificações de espera do provisionado do banco de dados" class="w-full h-auto">
+                    <img src="./src/imagens/provisionamento.png"
+                        alt="Notificações de espera do provisionado do banco de dados" class="w-full h-auto">
                 </div>
                 <p>Aguarde o banco de dados ser provisionado, pode levar alguns minutos.</p>
                 <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/database-pronto.png" alt="Tela do painel mostrando o banco de dados pronto" class="w-full h-auto">
+                    <img src="./src/imagens/database-pronto.png" alt="Tela do painel mostrando o banco de dados pronto"
+                        class="w-full h-auto">
                 </div>
                 <p>Para acessar as configurações do banco de dados, clique no icone de três pontos do cluster de
                     database. E ative o <b>Enable public endpoint</b></p>
                 <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/database-config.png" alt="Tela de configurações do banco de dados" class="w-full h-auto">
+                    <img src="./src/imagens/database-config.png" alt="Tela de configurações do banco de dados"
+                        class="w-full h-auto">
                 </div>
                 <p>Clique em <b>View credentials</b></p>
                 <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/database-credendicais.png" alt="Tela de acesso as credenciais do banco de dados"
-                        class="w-full h-auto">
+                    <img src="./src/imagens/database-credendicais.png"
+                        alt="Tela de acesso as credenciais do banco de dados" class="w-full h-auto">
                 </div>
                 <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
                     <img src="./src/imagens/credenciais-valores.png" alt="TTela de credenciais do banco de dados"
@@ -244,443 +263,674 @@ DB_PASSWORD=sua_senha
                 <br>
                 <p>Inicie a maquina</p>
                 <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/inicar-maquina.png" alt="Tela de iniciar a maquina do projeto" class="w-full h-auto">
+                    <img src="./src/imagens/inicar-maquina.png" alt="Tela de iniciar a maquina do projeto"
+                        class="w-full h-auto">
                 </div>
                 <p>Após configurar o banco de dados e iniciar a maquina, podemos fazer o deploy e acessar o dominio
                     disponibilzado pelo
                     Laravel Cloud</p>
                 <div class="border  border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                    <img src="./src/imagens/deploy.png" alt="Tela com os borões e deploy e acesso ao dominio" class="w-full h-auto">
+                    <img src="./src/imagens/deploy.png" alt="Tela com os borões e deploy e acesso ao dominio"
+                        class="w-full h-auto">
                 </div>
                 <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
                     <strong>
-                        <p class="font-medium">Nota: Caso já tenha um domínio cadastrado em uma plataforma de DNS, você pode fazer essa personalização.</p>
+                        <p class="font-medium">Nota: Caso já tenha um domínio cadastrado em uma plataforma de DNS, você
+                            pode fazer essa personalização.</p>
                     </strong>
                 </div>
             </section>
 
-            <section id="cadastroLogin" class="mb-12 pt-4">
-                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">4. Cadastro e Login</h2>
-            </section>
+         <section id="cadastroLogin" class="mb-12 pt-4">
+  <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">4. Cadastro e Login</h2>
+
+  <!-- Subtítulo: Cadastro -->
+  <h3 id="cadastro" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">4.1 Tela de Cadastro</h3>
+  <p class="text-gray-600 mb-4">
+    A tela de cadastro permite que novos usuários se registrem no sistema vCardHub de forma simples e intuitiva.
+  </p>
+  <ul class="list-disc list-inside text-gray-700 mb-4">
+    <li>Preencha seu <strong>Nome</strong>, <strong>CPF ou CNPJ</strong>, <strong>Telefone</strong> e <strong>E-mail</strong>.</li>
+    <li>Crie uma <strong>Senha segura</strong> e confirme-a no campo abaixo.</li>
+    <li>Finalize clicando no botão <strong>Criar conta</strong>.</li>
+  </ul>
+  <div class="border border-gray-200 p-4 rounded shadow mb-6">
+    <img src="src/imagens/cadastro..jpeg" alt="Tela de Cadastro do Sistema" class="w-full h-auto rounded">
+    <p class="text-center text-sm text-gray-500 mt-2">Figura - Tela de Cadastro</p>
+  </div>
+
+  <!-- Subtítulo: Login -->
+  <h3 id="login" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">4.2 Tela de Login</h3>
+  <p class="text-gray-600 mb-4">
+    A tela de login permite que usuários já cadastrados acessem o sistema com segurança.
+  </p>
+  <ul class="list-disc list-inside text-gray-700 mb-4">
+    <li>Informe seu <strong>E-mail</strong> e <strong>Senha</strong> previamente cadastrados.</li>
+    <li>Marque a opção <strong>Lembre de mim</strong> se quiser manter o login ativo.</li>
+    <li>Se esqueceu a senha, clique em <strong>Esqueceu sua senha?</strong> para recuperar.</li>
+  </ul>
+  <div class="border border-gray-200 p-4 rounded shadow mb-6">
+    <img src="src/imagens/login.jpeg" alt="Tela de Login do Sistema" class="w-full h-auto rounded">
+    <p class="text-center text-sm text-gray-500 mt-2">Figura - Tela de Login</p>
+  </div>
+</section>
 
             <section id="painelPrincipal" class="mb-12 pt-4">
-                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">5. Painel principal</h2>
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">5. Painel
+                    Principal</h2>
+                <p class="text-gray-600 mb-6">
+                    Esta é a tela principal do sistema vCardHub. Aqui você encontra um resumo visual com as informações
+                    mais importantes do seu cadastro no sistema, como Cartões, Empresas, Links e Produtos.
+                <div class="border border-gray-200 p-4 rounded shadow mb-6">
+                    <img src="src/imagens/Painel_Principal.jpeg" alt="Tela do Painel Principal do Sistema"
+                        class="w-full h-auto rounded">
+                    <p class="text-center text-sm text-gray-500 mt-2">Figura 1 - Visualização geral do Painel Principal
+                        do vCardHub</p>
+                </div>
+                </p>
+
+
+                <!-- Cards com resumo -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+
+                    <!-- Cartões -->
+                    <div class="bg-white p-4 rounded shadow">
+                        <p class="text-sm text-gray-600">Meus Cartões</p>
+                        <p class="text-2xl font-bold text-blue-700">1</p>
+                        <p class="text-blue-500 text-sm mt-2">Total de cartões 🔒</p>
+                        <p class="text-xs text-gray-400 mt-1">Visualize aqui quantos cartões digitais você criou.</p>
+                    </div>
+
+                    <!-- Empresas -->
+                    <div class="bg-white p-4 rounded shadow">
+                        <p class="text-sm text-gray-600">Minhas Empresas</p>
+                        <p class="text-2xl font-bold text-blue-700">1</p>
+                        <p class="text-blue-500 text-sm mt-2">Total de empresas 🏢</p>
+                        <p class="text-xs text-gray-400 mt-1">Empresas vinculadas ao seu perfil.</p>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="bg-white p-4 rounded shadow">
+                        <p class="text-sm text-gray-600">Meus Links</p>
+                        <p class="text-2xl font-bold text-blue-700">0</p>
+                        <p class="text-blue-500 text-sm mt-2">Total de links 🔗</p>
+                        <p class="text-xs text-gray-400 mt-1">Links personalizados cadastrados.</p>
+                    </div>
+
+                    <!-- Produtos -->
+                    <div class="bg-white p-4 rounded shadow">
+                        <p class="text-sm text-gray-600">Meus Produtos</p>
+                        <p class="text-2xl font-bold text-blue-700">4</p>
+                        <p class="text-blue-500 text-sm mt-2">Total de produtos 🧾</p>
+                        <p class="text-xs text-gray-400 mt-1">Itens disponíveis na sua vitrine.</p>
+                    </div>
+                </div>
+
+                <!-- Instrução adicional -->
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                    <p class="text-sm text-gray-700">
+                        ℹ️ <strong>Dica:</strong> Utilize o menu lateral para navegar entre os módulos detalhados do
+                        sistema. O painel de controle serve como um resumo rápido do seu ambiente.
+                    </p>
+                </div>
             </section>
 
+
             <section id="modulos" class="mb-12 pt-4">
-                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">6. Módulos Principais</h2>
+                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">6. Módulos
+                    Principais</h2>
                 <!-- módulo usuários -->
                 <div id="modulo1" class="mb-10 pt-4">
                     <div id="usuarios" class="mb-10 pt-4">
                         <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1 Módulo Usuários</h3>
 
                         <div id="usuarios" class="mb-10 pt-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1.1 Cadastrar Novo Usuário</h3>
+                            <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1.1 Cadastrar Novo Usuário
+                            </h3>
 
-                        <p>No menu lateral vá para a opção <b>Usuários</b> nela clique na opção <b>Novo Usuario</b> para se redirecionado para pagina de criação de usuário</p>
+                            <p>No menu lateral vá para a opção <b>Usuários</b> nela clique na opção <b>Novo Usuario</b>
+                                para se redirecionado para pagina de criação de usuário</p>
 
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="./src/imagens/Usuários_Pagina_Inicial_2.png" alt="Tela Inicial dos Usuarios" class="w-full h-auto">
-                        </div>
+                            <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                <img src="./src/imagens/Usuários_Pagina_Inicial_2.png" alt="Tela Inicial dos Usuarios"
+                                    class="w-full h-auto">
+                            </div>
 
-                        <p>
-                            Na pagina de criação de Usuario preencha os campos obrigatorios, representados pelos asteriscos vermelhos, e clique na opção <b>Criar</b>, ou em <b>Salvar e criar outro</b>, caso queira cadastrar um usuário e logo em seguida realizar o cadastramento do proximo. Se quiser cancelar o cadastramento basta clicar na opção <b>Cancelar</b>
-                        </p>
+                            <p>
+                                Na pagina de criação de Usuario preencha os campos obrigatorios, representados pelos
+                                asteriscos vermelhos, e clique na opção <b>Criar</b>, ou em <b>Salvar e criar outro</b>,
+                                caso queira cadastrar um usuário e logo em seguida realizar o cadastramento do proximo.
+                                Se quiser cancelar o cadastramento basta clicar na opção <b>Cancelar</b>
+                            </p>
 
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="./src/imagens/Criar_Usuário Novo_Usuario_2.png" alt="Tela de criação de Usuários" class="w-full h-auto">
-                        </div>
+                            <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                <img src="./src/imagens/Criar_Usuário Novo_Usuario_2.png"
+                                    alt="Tela de criação de Usuários" class="w-full h-auto">
+                            </div>
 
-                        <P>
-                            Ao criar um novo usuário o mesmo ficará visivel na pagina inicial da seção usuários nela o usuário pode <b>Editar</b>, <b>Visualizar</b>, <b>Deletar</b>.
-                        </P>
+                            <P>
+                                Ao criar um novo usuário o mesmo ficará visivel na pagina inicial da seção usuários nela
+                                o usuário pode <b>Editar</b>, <b>Visualizar</b>, <b>Deletar</b>.
+                            </P>
 
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="./src/imagens/Usuários_Pagina_Inicial_2.png" alt="Tela inicial de usuários atualizados" class="w-full h-auto">
-                        </div>
+                            <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                <img src="./src/imagens/Usuários_Pagina_Inicial_2.png"
+                                    alt="Tela inicial de usuários atualizados" class="w-full h-auto">
+                            </div>
 
-                        <div id="usuarios" class="mb-10 pt-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1.2 Editar Usuários</h3>
+                            <div id="usuarios" class="mb-10 pt-4">
+                                <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1.2 Editar Usuários
+                                </h3>
 
-                        <p>
-                            Para editar as informações de um Usuário já cadastrado basta clicar na opção <b>Editar</b> e modificar o que deseja, lembrando de clicar na opção <b>Salvar Mudanças</b> quando já tivar terminado, ou clicar na opção <b>Cancelar</b>, caso não queira realizar as mudanças. Caso queira excluir o usuário nessa pagina basta clicar na opção <b>Excluir</b>.
-                        </p>
+                                <p>
+                                    Para editar as informações de um Usuário já cadastrado basta clicar na opção
+                                    <b>Editar</b> e modificar o que deseja, lembrando de clicar na opção <b>Salvar
+                                        Mudanças</b> quando já tivar terminado, ou clicar na opção <b>Cancelar</b>, caso
+                                    não queira realizar as mudanças. Caso queira excluir o usuário nessa pagina basta
+                                    clicar na opção <b>Excluir</b>.
+                                </p>
 
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="./src/imagens/Usuários_Pagina_Inicial_2.png" alt="Tela inicial de usuários atualizados" class="w-full h-auto">
-                        </div>
+                                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                    <img src="./src/imagens/Usuários_Pagina_Inicial_2.png"
+                                        alt="Tela inicial de usuários atualizados" class="w-full h-auto">
+                                </div>
 
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="./src/imagens/Editar_Usuário_2.png" alt="Tela de edição dos usuários" class="w-full h-auto">
-                        </div>
+                                <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                    <img src="./src/imagens/Editar_Usuário_2.png" alt="Tela de edição dos usuários"
+                                        class="w-full h-auto">
+                                </div>
 
-                        <div id="usuarios" class="mb-10 pt-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1.3 Visualizar Usuários</h3>
+                                <div id="usuarios" class="mb-10 pt-4">
+                                    <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1.3 Visualizar
+                                        Usuários</h3>
 
-                        <p>
-                            Para visualizar as informações de um usuário já cadastrado basta clicar na opção <b>Visualizar</b> e caso deseje fechar basta clicar na opção <b>Fechar</b> ou no <b>X</b> localizado no canto superior direito.
-                        </p>
+                                    <p>
+                                        Para visualizar as informações de um usuário já cadastrado basta clicar na opção
+                                        <b>Visualizar</b> e caso deseje fechar basta clicar na opção <b>Fechar</b> ou no
+                                        <b>X</b> localizado no canto superior direito.
+                                    </p>
 
-                         <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="./src/imagens/Usuários_Pagina_Inicial_2.png" alt="Tela inicial de usuários atualizados" class="w-full h-auto">
-                        </div>
+                                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                        <img src="./src/imagens/Usuários_Pagina_Inicial_2.png"
+                                            alt="Tela inicial de usuários atualizados" class="w-full h-auto">
+                                    </div>
 
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Visualizar_Usuários_2.png" alt="Tela de visualização dos usuários" class="w-full h-auto">
-                        </div>
+                                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                        <img src="./src/imagens/Visualizar_Usuários_2.png"
+                                            alt="Tela de visualização dos usuários" class="w-full h-auto">
+                                    </div>
 
-                        <div id="usuarios" class="mb-10 pt-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1.4 Excluir Usuários</h3>
+                                    <div id="usuarios" class="mb-10 pt-4">
+                                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.1.4 Excluir
+                                            Usuários</h3>
 
-                        <p>
-                            Para excluir um usuário já cadastrado basta clicar na opção <b>Deletar</b> e depois clicar em <b>Confirmar</b>, ou caso não queira descartar aquele usuário basta clicar em <b>Cancelar</b> ou no <b>X</b> localizado no canto superior direito.
-                        </p>
+                                        <p>
+                                            Para excluir um usuário já cadastrado basta clicar na opção <b>Deletar</b> e
+                                            depois clicar em <b>Confirmar</b>, ou caso não queira descartar aquele
+                                            usuário basta clicar em <b>Cancelar</b> ou no <b>X</b> localizado no canto
+                                            superior direito.
+                                        </p>
 
-                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="./src/imagens/Usuários_Pagina_Inicial_2.png" alt="Tela inicial de usuários atualizados" class="w-full h-auto">
-                        </div>
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Usuários_Pagina_Inicial_2.png"
+                                                alt="Tela inicial de usuários atualizados" class="w-full h-auto">
+                                        </div>
 
-                    <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Usuários_Excluir_2.png" alt="Tela de exclusão dos usuários" class="w-full h-auto">
-                    </div>
-                </div>
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Usuários_Excluir_2.png"
+                                                alt="Tela de exclusão dos usuários" class="w-full h-auto">
+                                        </div>
+                                    </div>
 
-                <!-- módulo produtos -->
-                 <div>
-                     <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.2 Módulo Produtos</h3>
+                                    <!-- módulo produtos -->
+                                    <div>
+                                        <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                            6.2 Módulo Produtos</h3>
 
-                      <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.2.1 Cadastrar Novo Produto</h3>
+                                        <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                            6.2.1 Cadastrar Novo Produto</h3>
 
-                        <p>No menu lateral vá para seção <b>Produtos</b> nela clique na opção <b>Criar Produto</b> para ser redirecionado para pagina de criação de Produtos</p>
+                                        <p>No menu lateral vá para seção <b>Produtos</b> nela clique na opção <b>Criar
+                                                Produto</b> para ser redirecionado para pagina de criação de Produtos
+                                        </p>
 
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Modulo_Produto_Inicial.jpg" alt="Tela do Icone da seção Produtos" class="w-full h-auto">
-                        </div>
-
-
-                        <p>Nela Preencha os campos <b>Nome</b>,
-                        <b>Preço</b>, no campo <b>Imagem</b> realize um upload da foto do produto, na parte da <b>URL do produto</b> copie a URL do produto, e o por ultimo na opção <b>Ativo</b> indique se esse produto está ativo ou não. Depois de preecher tudo que foi pedido clique em <b>Criar</b>, ou em <b>Salvar e criar outro</b>, para criar um produto e logo em seguida realizar o cadastramento do proximo. Se quiser cancelar o cadastramento basta clicar em <b>Cancelar</b></p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Criar_Produto_2.png" alt="Tela de criação dos Produtos" class="w-full h-auto">
-                        </div>
-
-                        <p>Após a criação do Produto o usuário poderá visualiza-lo na pagina inicial da seção Produto. Onde o usuário pode <b>Editar</b>, <b>Visualizar</b> e <b>Deletar</b>
-                        </p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Modulo_Produto.jpeg" alt="Tela de criação dos Produtos" class="w-full h-auto">
-                        </div>
-                        
-                        <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.2.2 Editar Produto</h3>
-
-                        <p>
-                            Para editar as informações de um Produto já cadastrado basta clicar na opção <b>Editar</b> e modificar o que deseja, lembrando de clicar na opção <b>Salvar alterações</b> quando já tiver terminado, ou clicar na opção <b>Cancelar</b>, caso não queira realizar as mudanças.Se o usuário desejar excluir o produto nessa pagina mesmo basta clicar na opção <b>Excluir</b> localizada no canto superior direito.
-                        </p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Modulo_Produto.jpeg" alt="Tela de criação dos Produtos" class="w-full h-auto">
-                        </div>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Editar_Produto.jpg" alt="Tela de criação dos Produtos" class="w-full h-auto">
-                        </div>
-
-                        <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.2.3 Excluir Produto</h3>
-                        
-                        <p>
-                            Para excluir um Produto já cadastrado basta clicar na opção <b>Deletar</b> e depois clicar em <b>Confirmar</b>, ou caso não queira descartar aquele produto basta clicar em <B>Cancelar</B>
-                        </p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Modulo_Produto.jpeg" alt="Tela de criação dos Produtos" class="w-full h-auto">
-                        </div>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Excluir_Produto.jpg" alt="Tela de criação dos Produtos" class="w-full h-auto">
-                        </div>
-
-                        <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.2.4 Visualizar Produto</h3>
-
-                        <p>
-                            Para visualizar as informações de um produto já cadastrado basta clicar na opção <b>Visualizar/view</b> e caso deseje fechar basta clicar na opção <b>Fechar</b>, ou clique na opção <b>X</b> localizado no canto superior direito.
-                        </p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Modulo_Produto.jpeg" alt="Tela de criação dos Produtos" class="w-full h-auto">
-                        </div>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                        <img src="./src/imagens/Visualizar_Produto_2.png" alt="Tela de criação dos Produtos" class="w-full h-auto">
-                 </div>
-
-                 <div id="modulo1" class="mb-10 pt-4">
-                    <div id="empresas" class="mb-10 pt-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.3 Módulo Empresa</h3>
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.3.1 Cadastrando uma Empresa </h3>
-
-                        <p>No painel principal vá para a seção <b>Empresas</b> nela clique na opção <b>Criar.</b></p>
-                        <p>Preencha todas as informações necessárias e siga para o proximo passo.</p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="src/imagens/Criar Empresa.png" alt="Tela cadastro empresa" class="w-full h-auto">
-                        </div>
-                        <div id="modulo1" class="mb-10 pt-4">
-                    <div id="empresas" class="mb-10 pt-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.3.2 Visualizando Empresa </h3>
-                        
-
-                        <p>Após criar a empresa, clique novamente na seção <b>Empresas</b> para visualizar o cadastro realizado.<b></b></p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="src/imagens/Empresas_Pagina_Inicial.png" alt="Visualizando empresa" class="w-full h-auto">
-                        </div>
-                            
-                        <p>Você pode criar uma ou mais empresas, basta repetir o mesmo processo e visualizar as informções atualizadas.</p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="src/imagens/Empresas_Pagina_Inicial_Atualizada.png" alt="Visualizando empresa" class="w-full h-auto">
-                        </div>
-
-                           <p>Você também pode visualizar a empresa especifica que você deseja</p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="src/imagens/Empresas_Visualizar.png" alt="Visualizando empresa" class="w-full h-auto">
-                        </div>
-
-                           <div id="modulo1" class="mb-10 pt-4">
-                    <div id="empresas" class="mb-10 pt-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.3.3 Editar Empresa </h3>
-
-                        <p>Após clicar no botão <b>Editar</b> você podera <b>Alterar</b> as informações desejadas e salvar as alterações.</p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="src/imagens/Editar Empresa.png" alt="Editar empresa" class="w-full h-auto">
-                        </div>
-
-                               <div id="modulo1" class="mb-10 pt-4">
-                    <div id="empresas" class="mb-10 pt-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.3.4 Excluir Empresa </h3>
-
-                        <p>O usuario tambem pode excluir uma empresa caso desejar, basta clicar no botão <b>Excluir,</b> assim deletando o cadastro desejado.</p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="src/imagens/Empresas_Excluir.png" alt="Excluir empresa" class="w-full h-auto">
-                        </div>
-                           <div id="modulo1" class="mb-10 pt-4">
-                    <div id="perfil" class="mb-10 pt-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.4 Módulo Perfil</h3>
-                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.4.1 Acesso ao Perfil</h3>
-
-                        <p>No canto <b>Superior direito </b> presione a aba perfil e logo apos clique em perfil novamente.<b></b></p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="src/imagens/Perfil_Painel_de_controle.png" alt="Tela Inicial dos Usuarios" class="w-full h-auto">
-                        </div>
-                          <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.4.2 Editar Perfil</h3>
-
-                        <p>Ao adentrar na pagina voce poderar <b>Modificar </b> informações e salvar as mesma. <b></b></p>
-
-                        <div class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
-                            <img src="src/imagens/Perfil_Editar.png" alt="Tela Inicial dos Usuarios" class="w-full h-auto">
-                        </div>
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Modulo_Produto_Inicial.jpg"
+                                                alt="Tela do Icone da seção Produtos" class="w-full h-auto">
+                                        </div>
 
 
-    
+                                        <p>Nela Preencha os campos <b>Nome</b>,
+                                            <b>Preço</b>, no campo <b>Imagem</b> realize um upload da foto do produto,
+                                            na parte da <b>URL do produto</b> copie a URL do produto, e o por ultimo na
+                                            opção <b>Ativo</b> indique se esse produto está ativo ou não. Depois de
+                                            preecher tudo que foi pedido clique em <b>Criar</b>, ou em <b>Salvar e criar
+                                                outro</b>, para criar um produto e logo em seguida realizar o
+                                            cadastramento do proximo. Se quiser cancelar o cadastramento basta clicar em
+                                            <b>Cancelar</b>
+                                        </p>
+
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Criar_Produto_2.png"
+                                                alt="Tela de criação dos Produtos" class="w-full h-auto">
+                                        </div>
+
+                                        <p>Após a criação do Produto o usuário poderá visualiza-lo na pagina inicial da
+                                            seção Produto. Onde o usuário pode <b>Editar</b>, <b>Visualizar</b> e
+                                            <b>Deletar</b>
+                                        </p>
+
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Modulo_Produto.jpeg"
+                                                alt="Tela de criação dos Produtos" class="w-full h-auto">
+                                        </div>
+
+                                        <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                            6.2.2 Editar Produto</h3>
+
+                                        <p>
+                                            Para editar as informações de um Produto já cadastrado basta clicar na opção
+                                            <b>Editar</b> e modificar o que deseja, lembrando de clicar na opção
+                                            <b>Salvar alterações</b> quando já tiver terminado, ou clicar na opção
+                                            <b>Cancelar</b>, caso não queira realizar as mudanças.Se o usuário desejar
+                                            excluir o produto nessa pagina mesmo basta clicar na opção <b>Excluir</b>
+                                            localizada no canto superior direito.
+                                        </p>
+
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Modulo_Produto.jpeg"
+                                                alt="Tela de criação dos Produtos" class="w-full h-auto">
+                                        </div>
+
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Editar_Produto.jpg"
+                                                alt="Tela de criação dos Produtos" class="w-full h-auto">
+                                        </div>
+
+                                        <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                            6.2.3 Excluir Produto</h3>
+
+                                        <p>
+                                            Para excluir um Produto já cadastrado basta clicar na opção <b>Deletar</b> e
+                                            depois clicar em <b>Confirmar</b>, ou caso não queira descartar aquele
+                                            produto basta clicar em <B>Cancelar</B>
+                                        </p>
+
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Modulo_Produto.jpeg"
+                                                alt="Tela de criação dos Produtos" class="w-full h-auto">
+                                        </div>
+
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Excluir_Produto.jpg"
+                                                alt="Tela de criação dos Produtos" class="w-full h-auto">
+                                        </div>
+
+                                        <h3 id="produtos" class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                            6.2.4 Visualizar Produto</h3>
+
+                                        <p>
+                                            Para visualizar as informações de um produto já cadastrado basta clicar na
+                                            opção <b>Visualizar/view</b> e caso deseje fechar basta clicar na opção
+                                            <b>Fechar</b>, ou clique na opção <b>X</b> localizado no canto superior
+                                            direito.
+                                        </p>
+
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Modulo_Produto.jpeg"
+                                                alt="Tela de criação dos Produtos" class="w-full h-auto">
+                                        </div>
+
+                                        <div
+                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                            <img src="./src/imagens/Visualizar_Produto_2.png"
+                                                alt="Tela de criação dos Produtos" class="w-full h-auto">
+                                        </div>
+
+                                        <div id="modulo1" class="mb-10 pt-4">
+                                            <div id="empresas" class="mb-10 pt-4">
+                                                <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.3
+                                                    Módulo Empresa</h3>
+                                                <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.3.1
+                                                    Cadastrando uma Empresa </h3>
+
+                                                <p>No painel principal vá para a seção <b>Empresas</b> nela clique na
+                                                    opção <b>Criar.</b></p>
+                                                <p>Preencha todas as informações necessárias e siga para o proximo
+                                                    passo.</p>
+
+                                                <div
+                                                    class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                                    <img src="src/imagens/Criar Empresa.png" alt="Tela cadastro empresa"
+                                                        class="w-full h-auto">
+                                                </div>
+                                                <div id="modulo1" class="mb-10 pt-4">
+                                                    <div id="empresas" class="mb-10 pt-4">
+                                                        <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                                            6.3.2 Visualizando Empresa </h3>
+
+
+                                                        <p>Após criar a empresa, clique novamente na seção
+                                                            <b>Empresas</b> para visualizar o cadastro realizado.<b></b>
+                                                        </p>
+
+                                                        <div
+                                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                                            <img src="src/imagens/Empresas_Pagina_Inicial.png"
+                                                                alt="Visualizando empresa" class="w-full h-auto">
+                                                        </div>
+
+                                                        <p>Você pode criar uma ou mais empresas, basta repetir o mesmo
+                                                            processo e visualizar as informções atualizadas.</p>
+
+                                                        <div
+                                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                                            <img src="src/imagens/Empresas_Pagina_Inicial_Atualizada.png"
+                                                                alt="Visualizando empresa" class="w-full h-auto">
+                                                        </div>
+
+                                                        <p>Você também pode visualizar a empresa especifica que você
+                                                            deseja</p>
+
+                                                        <div
+                                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                                            <img src="src/imagens/Empresas_Visualizar.png"
+                                                                alt="Visualizando empresa" class="w-full h-auto">
+                                                        </div>
+
+                                                        <div id="modulo1" class="mb-10 pt-4">
+                                                            <div id="empresas" class="mb-10 pt-4">
+                                                                <h3
+                                                                    class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                                                    6.3.3 Editar Empresa </h3>
+
+                                                                <p>Após clicar no botão <b>Editar</b> você podera
+                                                                    <b>Alterar</b> as informações desejadas e salvar as
+                                                                    alterações.</p>
+
+                                                                <div
+                                                                    class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                                                    <img src="src/imagens/Editar Empresa.png"
+                                                                        alt="Editar empresa" class="w-full h-auto">
+                                                                </div>
+
+                                                                <div id="modulo1" class="mb-10 pt-4">
+                                                                    <div id="empresas" class="mb-10 pt-4">
+                                                                        <h3
+                                                                            class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                                                            6.3.4 Excluir Empresa </h3>
+
+                                                                        <p>O usuario tambem pode excluir uma empresa
+                                                                            caso desejar, basta clicar no botão
+                                                                            <b>Excluir,</b> assim deletando o cadastro
+                                                                            desejado.</p>
+
+                                                                        <div
+                                                                            class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                                                            <img src="src/imagens/Empresas_Excluir.png"
+                                                                                alt="Excluir empresa"
+                                                                                class="w-full h-auto">
+                                                                        </div>
+                                                                        <div id="modulo1" class="mb-10 pt-4">
+                                                                            <div id="perfil" class="mb-10 pt-4">
+                                                                                <h3
+                                                                                    class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                                                                    6.4 Módulo Perfil</h3>
+                                                                                <h3
+                                                                                    class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                                                                    6.4.1 Acesso ao Perfil</h3>
+
+                                                                                <p>No canto <b>Superior direito </b>
+                                                                                    presione a aba perfil e logo apos
+                                                                                    clique em perfil novamente.<b></b>
+                                                                                </p>
+
+                                                                                <div
+                                                                                    class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                                                                    <img src="src/imagens/Perfil_Painel_de_controle.png"
+                                                                                        alt="Tela Inicial dos Usuarios"
+                                                                                        class="w-full h-auto">
+                                                                                </div>
+                                                                                <h3
+                                                                                    class="text-lg md:text-xl font-semibold text-blue-800 mb-3">
+                                                                                    6.4.2 Editar Perfil</h3>
+
+                                                                                <p>Ao adentrar na pagina voce poderar
+                                                                                    <b>Modificar </b> informações e
+                                                                                    salvar as mesma. <b></b></p>
+
+                                                                                <div
+                                                                                    class="border border-gray-200 p-2 my-6 shadow-sm max-w-full overflow-hidden">
+                                                                                    <img src="src/imagens/Perfil_Editar.png"
+                                                                                        alt="Tela Inicial dos Usuarios"
+                                                                                        class="w-full h-auto">
+                                                                                </div>
+
+
+
             </section>
 
-  <!-- Criar Link -->
-<h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.5 Modulo link</h3>
-<section id="modulo-link" class="p-6 max-w-4xl mx-auto">
-  <h2 class="text-xl font-bold text-blue-800 mb-4">1. Criar Link</h2>
+            <!-- Criar Link -->
+            <h3 class="text-lg md:text-xl font-semibold text-blue-800 mb-3">6.5 Modulo link</h3>
+            <section id="modulo-link" class="p-6 max-w-4xl mx-auto">
+                <h2 class="text-xl font-bold text-blue-800 mb-4">1. Criar Link</h2>
 
-  <p>No painel principal, vá até a seção <b>Criar Link</b>. Nela, você poderá adicionar um novo link personalizado ao sistema. Para isso, siga as etapas abaixo:</p>
+                <p>No painel principal, vá até a seção <b>Criar Link</b>. Nela, você poderá adicionar um novo link
+                    personalizado ao sistema. Para isso, siga as etapas abaixo:</p>
 
-  <ul class="list-disc list-inside my-4 text-gray-700">
-    <li>Preencha o campo <b>Título do Link</b> com um nome identificável, como "Site da Empresa".</li>
-    <li>No campo <b>URL do Link</b>, insira o endereço completo do link, como por exemplo <i>https://www.exemplo.com</i>.</li>
-    <li>Na opção <b>Status</b>, escolha entre "Ativo" (para links que devem ser exibidos) ou "Inativo" (para manter oculto no sistema).</li>
-  </ul>
+                <ul class="list-disc list-inside my-4 text-gray-700">
+                    <li>Preencha o campo <b>Título do Link</b> com um nome identificável, como "Site da Empresa".</li>
+                    <li>No campo <b>URL do Link</b>, insira o endereço completo do link, como por exemplo
+                        <i>https://www.exemplo.com</i>.</li>
+                    <li>Na opção <b>Status</b>, escolha entre "Ativo" (para links que devem ser exibidos) ou "Inativo"
+                        (para manter oculto no sistema).</li>
+                </ul>
 
-  <p class= "mb-6" >
-  Depois de preencher todos os campos, clique no botão <b>Criar</b> para salvar o link no sistema. O novo link será exibido na lista de links disponíveis.</p>
+                <p class="mb-6">
+                    Depois de preencher todos os campos, clique no botão <b>Criar</b> para salvar o link no sistema. O
+                    novo link será exibido na lista de links disponíveis.</p>
 
-  <img src="src/imagens/Criar Link.png" alt="Tela Criar Link" class="mb-6 rounded shadow">
+                <img src="src/imagens/Criar Link.png" alt="Tela Criar Link" class="mb-6 rounded shadow">
 
-  <form class="space-y-4">
-    <input type="text" placeholder="Título do Link" class="w-full p-2 border rounded">
-    <input type="url" placeholder="URL do Link" class="w-full p-2 border rounded">
-    <select class="w-full p-2 border rounded">
-      <option>Ativo</option>
-      <option>Inativo</option>
-    </select>
-    <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Criar</button>
-  </form>
-</section>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Título do Link" class="w-full p-2 border rounded">
+                    <input type="url" placeholder="URL do Link" class="w-full p-2 border rounded">
+                    <select class="w-full p-2 border rounded">
+                        <option>Ativo</option>
+                        <option>Inativo</option>
+                    </select>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Criar</button>
+                </form>
+            </section>
 
-  <!-- Editar Link -->
-<section id="editar-link" class="p-6 max-w-4xl mx-auto">
-  <h2 class="text-xl font-bold text-blue-800 mb-6">2. Editar Link</h2>
+            <!-- Editar Link -->
+            <section id="editar-link" class="p-6 max-w-4xl mx-auto">
+                <h2 class="text-xl font-bold text-blue-800 mb-6">2. Editar Link</h2>
 
-  <p>Para editar um link já existente no sistema, siga as instruções abaixo:</p>
+                <p>Para editar um link já existente no sistema, siga as instruções abaixo:</p>
 
-  <ul class="list-disc list-inside my-4 text-gray-700">
-    <li>No painel principal, localize a seção <b>Links</b> e identifique o link que deseja editar.</li>
-    <li>Clique no botão <b>Editar</b> correspondente ao link desejado.</li>
-    <li>Na tela de edição, o sistema irá exibir os campos preenchidos com os dados atuais do link:</li>
-    <ul class="ml-6 list-disc">
-      <li>Altere o <b>Título</b> se necessário.</li>
-      <li>Modifique a <b>URL</b> conforme desejado (ex: corrigir ou atualizar o endereço).</li>
-      <li>Atualize o <b>Status</b> para "Ativo" ou "Inativo", de acordo com a visibilidade desejada.</li>
-    </ul>
-    <li>Após realizar as alterações, clique em <b>Salvar</b> para confirmar as modificações.</li>
-  </ul>
+                <ul class="list-disc list-inside my-4 text-gray-700">
+                    <li>No painel principal, localize a seção <b>Links</b> e identifique o link que deseja editar.</li>
+                    <li>Clique no botão <b>Editar</b> correspondente ao link desejado.</li>
+                    <li>Na tela de edição, o sistema irá exibir os campos preenchidos com os dados atuais do link:</li>
+                    <ul class="ml-6 list-disc">
+                        <li>Altere o <b>Título</b> se necessário.</li>
+                        <li>Modifique a <b>URL</b> conforme desejado (ex: corrigir ou atualizar o endereço).</li>
+                        <li>Atualize o <b>Status</b> para "Ativo" ou "Inativo", de acordo com a visibilidade desejada.
+                        </li>
+                    </ul>
+                    <li>Após realizar as alterações, clique em <b>Salvar</b> para confirmar as modificações.</li>
+                </ul>
 
- <p class="mb-4">
-  O sistema irá atualizar o link na base de dados e ele será exibido com as novas informações na lista principal.
-</p>
+                <p class="mb-4">
+                    O sistema irá atualizar o link na base de dados e ele será exibido com as novas informações na lista
+                    principal.
+                </p>
 
-  <img src="src/imagens/Editar Link.png" alt="Tela Editar Link" class="mb-6 rounded shadow">
+                <img src="src/imagens/Editar Link.png" alt="Tela Editar Link" class="mb-6 rounded shadow">
 
-  <form class="space-y-4">
-    <input type="text" value="Título Existente" class="w-full p-2 border rounded">
-    <input type="url" value="https://exemplo.com" class="w-full p-2 border rounded">
-    <select class="w-full p-2 border rounded">
-      <option selected>Ativo</option>
-      <option>Inativo</option>
-    </select>
-    <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Salvar</button>
-  </form>
-</section>
+                <form class="space-y-4">
+                    <input type="text" value="Título Existente" class="w-full p-2 border rounded">
+                    <input type="url" value="https://exemplo.com" class="w-full p-2 border rounded">
+                    <select class="w-full p-2 border rounded">
+                        <option selected>Ativo</option>
+                        <option>Inativo</option>
+                    </select>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Salvar</button>
+                </form>
+            </section>
 
- <!-- Página Inicial de Links -->
-<section id="pagina-inicial-links" class="p-6 max-w-6xl mx-auto">
-  <h2 class="text-xl font-bold text-blue-800 mb-4">3. Página Inicial de Links</h2>
+            <!-- Página Inicial de Links -->
+            <section id="pagina-inicial-links" class="p-6 max-w-6xl mx-auto">
+                <h2 class="text-xl font-bold text-blue-800 mb-4">3. Página Inicial de Links</h2>
 
-  <p>Na página inicial da seção <b>Links</b>, o usuário pode visualizar todos os links já cadastrados no sistema. Esta tela permite uma visão geral e rápida dos principais dados de cada link.</p>
+                <p>Na página inicial da seção <b>Links</b>, o usuário pode visualizar todos os links já cadastrados no
+                    sistema. Esta tela permite uma visão geral e rápida dos principais dados de cada link.</p>
 
-  <ul class="list-disc list-inside my-4 text-gray-700">
-    <li><b>Título:</b> Exibe o nome atribuído ao link no momento do cadastro ou edição.</li>
-    <li><b>URL:</b> Mostra o endereço completo associado ao link, com possibilidade de acesso clicando diretamente no texto azul sublinhado.</li>
-    <li><b>Status:</b> Indica se o link está ativo (visível) ou inativo (oculto).</li>
-    <li><b>Ações:</b> Permite ao usuário <b>Editar</b> ou <b>Excluir</b> o link, conforme a necessidade.</li>
-  </ul>
+                <ul class="list-disc list-inside my-4 text-gray-700">
+                    <li><b>Título:</b> Exibe o nome atribuído ao link no momento do cadastro ou edição.</li>
+                    <li><b>URL:</b> Mostra o endereço completo associado ao link, com possibilidade de acesso clicando
+                        diretamente no texto azul sublinhado.</li>
+                    <li><b>Status:</b> Indica se o link está ativo (visível) ou inativo (oculto).</li>
+                    <li><b>Ações:</b> Permite ao usuário <b>Editar</b> ou <b>Excluir</b> o link, conforme a necessidade.
+                    </li>
+                </ul>
 
-  <p>Essa interface facilita a gestão de links existentes, possibilitando atualizações rápidas e exclusões sempre que necessário.</p>
+                <p>Essa interface facilita a gestão de links existentes, possibilitando atualizações rápidas e exclusões
+                    sempre que necessário.</p>
 
-  <img src="src/imagens/Links_Pagina_Inicial.png" alt="Página Inicial Links" class="mb-4 rounded shadow">
+                <img src="src/imagens/Links_Pagina_Inicial.png" alt="Página Inicial Links" class="mb-4 rounded shadow">
 
-  <table class="w-full text-sm border">
-    <thead class="bg-gray-100">
-      <tr>
-        <th class="p-2">Título</th>
-        <th class="p-2">URL</th>
-        <th class="p-2">Status</th>
-        <th class="p-2">Ações</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="border-t">
-        <td class="p-2">Exemplo Link</td>
-        <td class="p-2 text-blue-600 underline">https://exemplo.com</td>
-        <td class="p-2 text-green-600">Ativo</td>
-        <td class="p-2 space-x-2">
-          <button class="text-blue-600 hover:underline">Editar</button>
-          <button class="text-red-600 hover:underline">Excluir</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
-
-  <!-- Excluir Link -->
-<section id="excluir-link" class="p-6 max-w-4xl mx-auto">
-  <h2 class="text-xl font-bold text-red-700 mb-4">4. Excluir Link</h2>
-
-  <p>Ao clicar em <b>Excluir</b> em um link existente, o sistema solicitará uma confirmação para evitar exclusões acidentais.</p>
-
-  <ul class="list-disc list-inside my-4 text-gray-700">
-    <li>Uma mensagem será exibida com o nome do link a ser excluído, perguntando se deseja realmente removê-lo.</li>
-    <li>Se clicar em <b>Cancelar</b>, a ação será interrompida e o link permanecerá no sistema.</li>
-    <li>Se clicar em <b>Excluir</b>, o link será permanentemente removido do banco de dados e não poderá ser recuperado.</li>
-  </ul>
-
-  <p class="mb-4">
-    Essa funcionalidade garante maior controle e segurança na administração dos links cadastrados.</p>
-
-  <img src="src/imagens/Excluir_Produto.jpg" alt="Tela Excluir Link" class="mb-4 rounded shadow">
-
-  <p>Tem certeza que deseja excluir o link <strong>"Exemplo Link"</strong>?</p>
-  <div class="mt-4 flex justify-end gap-4">
-    <button class="bg-gray-200 px-4 py-2 rounded">Cancelar</button>
-    <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Excluir</button>
-  </div>
-</section>
+                <table class="w-full text-sm border">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="p-2">Título</th>
+                            <th class="p-2">URL</th>
+                            <th class="p-2">Status</th>
+                            <th class="p-2">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t">
+                            <td class="p-2">Exemplo Link</td>
+                            <td class="p-2 text-blue-600 underline">https://exemplo.com</td>
+                            <td class="p-2 text-green-600">Ativo</td>
+                            <td class="p-2 space-x-2">
+                                <button class="text-blue-600 hover:underline">Editar</button>
+                                <button class="text-red-600 hover:underline">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
 
-  <!-- Visualizar Link -->
-<section id="visualizar-link" class="p-6 max-w-4xl mx-auto">
-  <h2 class="text-xl font-bold text-blue-800 mb-4">5. Visualizar Link</h2>
+            <!-- Excluir Link -->
+            <section id="excluir-link" class="p-6 max-w-4xl mx-auto">
+                <h2 class="text-xl font-bold text-red-700 mb-4">4. Excluir Link</h2>
 
-  <p>Na tela de <b>Visualização de Link</b>, o usuário pode consultar os detalhes completos de um link específico sem alterá-lo.</p>
+                <p>Ao clicar em <b>Excluir</b> em um link existente, o sistema solicitará uma confirmação para evitar
+                    exclusões acidentais.</p>
 
-  <ul class="list-disc list-inside my-4 text-gray-700">
-    <li><b>Título:</b> Mostra o nome dado ao link.</li>
-    <li><b>URL:</b> Exibe o endereço do link. Ao clicar nele, o sistema redireciona o usuário para a página correspondente.</li>
-    <li><b>Status:</b> Indica se o link está ativo ou inativo no sistema.</li>
-  </ul>
+                <ul class="list-disc list-inside my-4 text-gray-700">
+                    <li>Uma mensagem será exibida com o nome do link a ser excluído, perguntando se deseja realmente
+                        removê-lo.</li>
+                    <li>Se clicar em <b>Cancelar</b>, a ação será interrompida e o link permanecerá no sistema.</li>
+                    <li>Se clicar em <b>Excluir</b>, o link será permanentemente removido do banco de dados e não poderá
+                        ser recuperado.</li>
+                </ul>
 
-  <p class="mb-4">
+                <p class="mb-4">
+                    Essa funcionalidade garante maior controle e segurança na administração dos links cadastrados.</p>
 
-  Essa visualização é útil para conferência rápida antes de tomar decisões como editar ou excluir o link.</p>
+                <img src="src/imagens/Excluir_Produto.jpg" alt="Tela Excluir Link" class="mb-4 rounded shadow">
 
-  <img src="src/imagens/Links_Visualizar.png" alt="Visualizar Link" class="mb-4 rounded shadow">
+                <p>Tem certeza que deseja excluir o link <strong>"Exemplo Link"</strong>?</p>
+                <div class="mt-4 flex justify-end gap-4">
+                    <button class="bg-gray-200 px-4 py-2 rounded">Cancelar</button>
+                    <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Excluir</button>
+                </div>
+            </section>
 
-  <div class="space-y-2">
-    <p><strong>Título:</strong> Exemplo Link</p>
-    <p><strong>URL:</strong> <a href="https://exemplo.com" class="text-blue-600 underline">https://exemplo.com</a></p>
-    <p><strong>Status:</strong> Ativo</p>
-  </div>
-  <button class="mt-4 bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">Voltar</button>
-</section>
+
+            <!-- Visualizar Link -->
+            <section id="visualizar-link" class="p-6 max-w-4xl mx-auto">
+                <h2 class="text-xl font-bold text-blue-800 mb-4">5. Visualizar Link</h2>
+
+                <p>Na tela de <b>Visualização de Link</b>, o usuário pode consultar os detalhes completos de um link
+                    específico sem alterá-lo.</p>
+
+                <ul class="list-disc list-inside my-4 text-gray-700">
+                    <li><b>Título:</b> Mostra o nome dado ao link.</li>
+                    <li><b>URL:</b> Exibe o endereço do link. Ao clicar nele, o sistema redireciona o usuário para a
+                        página correspondente.</li>
+                    <li><b>Status:</b> Indica se o link está ativo ou inativo no sistema.</li>
+                </ul>
+
+                <p class="mb-4">
+
+                    Essa visualização é útil para conferência rápida antes de tomar decisões como editar ou excluir o
+                    link.</p>
+
+                <img src="src/imagens/Links_Visualizar.png" alt="Visualizar Link" class="mb-4 rounded shadow">
+
+                <div class="space-y-2">
+                    <p><strong>Título:</strong> Exemplo Link</p>
+                    <p><strong>URL:</strong> <a href="https://exemplo.com"
+                            class="text-blue-600 underline">https://exemplo.com</a></p>
+                    <p><strong>Status:</strong> Ativo</p>
+                </div>
+                <button class="mt-4 bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">Voltar</button>
+            </section>
 
 
 </body>
+
 </html>
 
 
-            <section id="duvidas" class="mb-12 pt-4">
-                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">7. Dúvidas Frequentes</h2>
-            </section>
+<section id="duvidas" class="mb-12 pt-4">
+    <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">7. Dúvidas Frequentes
+    </h2>
+</section>
 
-            <section id="contato" class="mb-12 pt-4">
-                <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">8. Contato e Suporte
-                </h2>
-                <p class="mb-4">Em caso de dúvidas ou problemas com o sistema, entre em contato com nossa equipe de
-                    suporte:</p>
+<section id="contato" class="mb-12 pt-4">
+    <h2 class="text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-blue-500 pb-2 mb-4">8. Contato e Suporte
+    </h2>
+    <p class="mb-4">Em caso de dúvidas ou problemas com o sistema, entre em contato com nossa equipe de
+        suporte:</p>
 
-                <ul class="list-disc pl-5 space-y-1">
-                    <li><strong class="font-medium">E-mail:</strong> suporte@vcardhub.com.br</li>
-                    <li><strong class="font-medium">Telefone:</strong> (71) 99231-2254</li>
-                    <li><strong class="font-medium">Horário de atendimento:</strong> Segunda a sexta, das 8h às 18h</li>
-                    <li><strong class="font-medium">Chat online:</strong> Disponível no canto inferior direito do
-                        sistema</li>
-                </ul>
-            </section>
-        </div>
+    <ul class="list-disc pl-5 space-y-1">
+        <li><strong class="font-medium">E-mail:</strong> suporte@vcardhub.com.br</li>
+        <li><strong class="font-medium">Telefone:</strong> (71) 99231-2254</li>
+        <li><strong class="font-medium">Horário de atendimento:</strong> Segunda a sexta, das 8h às 18h</li>
+        <li><strong class="font-medium">Chat online:</strong> Disponível no canto inferior direito do
+            sistema</li>
+    </ul>
+</section>
+</div>
 
-        <footer class="bg-gray-50 text-center py-8 mt-12">
-            <div class="container mx-auto px-4">
-                <p class="text-gray-600">© 2025 Equipe Bugados. Todos os direitos reservados.</p>
-                <p class="text-gray-500 text-sm mt-2">Última atualização: 10/05/2025</p>
-            </div>
-        </footer>
+<footer class="bg-gray-50 text-center py-8 mt-12">
+    <div class="container mx-auto px-4">
+        <p class="text-gray-600">© 2025 Equipe Bugados. Todos os direitos reservados.</p>
+        <p class="text-gray-500 text-sm mt-2">Última atualização: 10/05/2025</p>
     </div>
+</footer>
+</div>
 
-    <script src="./src/js/main.js">
-        
-    </script>
+<script src="./src/js/main.js">
+
+</script>
 </body>
 
 </html>
